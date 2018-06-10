@@ -149,7 +149,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /path/to/hexo/</span><br><span class="line">hexo n page categories</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>然后编辑 <code>source/categories/</code> 下的 index.md，内容如下：<br><figure class="highlight plain"><figcaption><span>Categories</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">layout: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>然后编辑 <code>source/categories/</code> 下的 index.md，内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Categories</span><br><span class="line">layout: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 <ol start="5">
 <li>关于主题的配置和一些相关问题，具体请参考主题作者的<a href="http://blackshow.me/2015/11/25/hexo-theme-freemind-386-readme-cn/" title="说明" target="_blank" rel="noopener">说明文档</a>和原作者关于Freemind的<a href="http://www.hahack.com/codes/hexo-theme-freemind/" title="说明文档" target="_blank" rel="noopener">说明文档</a>.</li>
 <li>每一步如果想预览，都可以通过<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -157,21 +157,21 @@
 </ol>
 <p>来预览，也可以看看主题作者的博客，他里面介绍了关于搭建和使用HEXO.</p>
 <h1 id="把本地HEXO部署到GitHub"><a href="#把本地HEXO部署到GitHub" class="headerlink" title="把本地HEXO部署到GitHub"></a>把本地HEXO部署到GitHub</h1><ol>
-<li>注册GitHub帐号    –废话</li>
-<li>新建一个repository，页面的右上角有个加号，里面的New repository<br>这里的Repository Name要和前面的Owner名字相同，格式就是这样的ENNRIaaa.github.io，ENNRIaaa就是我的Owner名字，然后选择public，创建就可以了</li>
+<li>注册GitHub帐号，然后登陆    –废话</li>
+<li>在GitHub新建一个repository，页面的右上角有个加号，里面的New repository<br>这里的Repository Name要和前面的Owner名字相同，格式就是这样的ENNRIaaa.github.io，ENNRIaaa就是我的Owner名字，然后选择public，创建就可以了</li>
 <li>编辑HEXO目录下的站点配置文件<code>_config.yml，</code>在最下面加上几行<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/ENNRIaaa/ENNRIaaa.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>把地址替换为自己GitHub库的地址，然后通过命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo c</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure></p>
-<p>此时可能会提示输入GitHub的用户名和密码。我看网上有教程说此步骤需要配置SSH，这个由于我没有配置，也不太懂，所以不多解释。<br>本地文件上传到GitHub之后，访问刚才的<strong>ENNRIaaa.github.io</strong>，看看是否能正常访问到你的博客</p>
+<p>此时可能会提示输入GitHub的用户名和密码。我看网上有教程说此步骤需要配置SSH，这个由于我没有配置，也不太懂，所以不多说明。<br>本地文件上传到GitHub之后，访问刚才的<strong>ENNRIaaa.github.io</strong>，看看是否能正常访问到你的博客</p>
 <h1 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h1><p>如果你不需要绑定个人域名，可以忽略这一步，博客可直接通过ENNRIaaa.github.io访问</p>
 <ol>
 <li>在你域名的解析页面添加解析，我是添加的CNAME，直接解析ENNRIaaa.github.io，有的人添加的A记录解析的博客的IP地址.</li>
 <li>在刚刚创建的GitHub的repository，选择Setting标签页，在下面的GitHub Pages里面有Custom domain，填上你的域名，Save就可以了。如果没有Custom domain，那就把GitHub Pages下的Source改为master branch。</li>
-<li>在访问绑定的域名，看看是否能正常访问到博客.<h1 id="关于新建文章"><a href="#关于新建文章" class="headerlink" title="关于新建文章"></a>关于新建文章</h1>新建文章需要使用markdown文档编辑工具，我使用的是<a href="http://markdownpad.com/" target="_blank" rel="noopener">MarkdownPad</a>这款工具.<br>文章的开通可以通过这几个标签来命名标题，日期，描述，分类，标签等…（具体只能靠自己摸索）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 小白部署HEXO到GitHub</span><br><span class="line">date: 2018-06-10 02:38:31</span><br><span class="line">description: 从傍晚到凌晨，HEXO和GitHub摸索中</span><br><span class="line">categories: 生活随笔</span><br><span class="line">tags: [hexo,GitHub] </span><br><span class="line">toc: true</span><br><span class="line">feature:</span><br></pre></td></tr></table></figure>
+<li>在访问绑定的域名，看看是否能正常访问到博客.<h1 id="关于新建文章"><a href="#关于新建文章" class="headerlink" title="关于新建文章"></a>关于新建文章</h1>新建文章需要使用markdown文档编辑工具，我使用的是<a href="http://markdownpad.com/" target="_blank" rel="noopener">MarkdownPad</a>这款工具.<br>文章的头部通过这几个标签来定义标题，日期，描述，分类，标签等…（具体只能靠自己摸索）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 小白部署HEXO到GitHub</span><br><span class="line">date: 2018-06-10 02:38:31</span><br><span class="line">description: 从傍晚到凌晨，HEXO和GitHub摸索中</span><br><span class="line">categories: 生活随笔</span><br><span class="line">tags: [hexo,GitHub] </span><br><span class="line">toc: true</span><br><span class="line">feature:</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文到这里已经结束了，我从昨晚一直折腾到今天早晨，很累.<br>搭建的流程都靠记忆，因为之前没有接触过这些，我也不是编程工作者，所以很多都已都是通过baidu，google一点一点查的，遇到问题的时候，网上给出的答案也是很零散的.<br>我写的这个流程可能也有一些错误或者失误的地方，遇到问题只能自己摸索了.</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我从昨晚一直折腾到今天早晨，很累.<br>本文搭建的流程都靠记忆，因为之前没有接触过这些，我也不是编程工作者，所以很多都是通过baidu，google一点一点地查，遇到问题的时候，网上给出的答案也是很零散的.<br>我写的这个流程可能也有一些错误或者失误的地方，遇到问题只能自己摸索了.</p>
 <ol>
 <li>关于命令以及配置文件.yml对格式的要求很严谨，例如:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br></pre></td></tr></table></figure>
 </li>
@@ -183,7 +183,7 @@
 </li>
 <li><p>关于上面三个命令可参照主题作者的<a href="http://blackshow.me/2015/11/30/hexo-cheats/" target="_blank" rel="noopener">HEXO使用心得</a>这篇文章.<br>关于搭建和使用hexo，可以看看主题<a href="http://blackshow.me" target="_blank" rel="noopener">作者的博客</a>，他有几遍文章专门是介绍说明HEXO的使用的，很有帮助.</p>
 </li>
-<li>还有一点，每次上传到GitHub之后，访问绑定的个人域名会出现404页面，之后重新到repository的Setting–&gt;GitHub Pages设置域名，才恢复正常.<br>关于这个问题，到本地hexo目录下的source，添加一个名为CNAME的文件，文件内容是自己绑定的域名，例如sora.red,此方法可解决该问题。不会新建文件的可通过新建文本文档命名为CNAME，然后里面编辑内容，之后保存，之后删除掉该文档的后缀即可，即删除.txt.</li>
+<li>还有一点，每次上传到GitHub之后，访问绑定的个人域名会出现404页面，之后重新到repository的Setting–&gt;GitHub Pages设置域名，才恢复正常.<br>关于这个问题，到本地hexo目录下的source，添加一个名为CNAME的文件，文件内容是自己绑定的域名，例如sora.red,此方法可解决该问题。不会新建文件的可通过新建文本文档命名为CNAME，然后里面编辑内容，之后保存，最后删除掉该文档的后缀即可，即删除.txt.</li>
 </ol>
 <hr>
 <p>本文到此结束.</p>
