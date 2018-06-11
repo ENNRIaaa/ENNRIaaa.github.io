@@ -6,15 +6,15 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>关于这个周末 | SORA | Yan Li&#39;s</title>
+  <title>vim简单用法 | SORA | Yan Li&#39;s</title>
   <meta name="author" content="Yan Li">
   
-  <meta name="description" content="有了技术，才能冲出枷锁">
+  <meta name="description" content="vim编辑器的简单命令，刚接触vim的我，它是个大麻烦">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="关于这个周末"/>
+  <meta property="og:title" content="vim简单用法"/>
   <meta property="og:site_name" content="SORA | Yan Li&#39;s"/>
 
   
@@ -108,7 +108,7 @@
 
 	
 		<div class="page-header">
-			<h1> 关于这个周末</h1>
+			<h1> vim简单用法</h1>
 		</div>
 	
 
@@ -125,12 +125,24 @@
 	<div class="mypage">		
 	  
 		 <div class="alert alert-success description">
-			<i class="fa fa-info-circle"></i> 有了技术，才能冲出枷锁
+			<i class="fa fa-info-circle"></i> vim编辑器的简单命令，刚接触vim的我，它是个大麻烦
 		 </div> <!-- alert -->
 	  		
 
 	  <a id="more"></a>
-<h3 id="2018年6月10日-星期日"><a href="#2018年6月10日-星期日" class="headerlink" title="2018年6月10日-星期日"></a>2018年6月10日-星期日</h3><p>本来打算这周末是好好看日语的，但是却没能静下心来看，因为时间都花在搞HEXO和GitHub上了。<br>之前我是不知道GitHub的，因为前几天的新闻，微软75亿美元收购GitHub，所以对它有些印象。<br>之前在电脑上装过linux，然后了解到了开源，其实再早知道开源一词是因为Android，大概是在我上高中的时候，那时候Android手机刚刚进入市场，我的第一部Android手机是我大哥给我买的，HTC G8，当时还是Android 2.0的系统。那会儿每天都研究这个，一遍一遍的刷机，回想那时候，玩得真起劲。慢慢地，知道Android的底层是linux，知道它是一个开源的系统。但是仅仅停留在“字面意思”。<br>由linux系统开始深入了解它的背景，知道linus这个人，知道Git。当然，我现在仍然不知道Git到底是做什么的，也不清楚GitHub究竟是做什么的。<br>在我上小学的时候，我就想以后到大学要学计算机、学编程，然后开发出一款软件，一款游戏，再卖好多好多钱。可是随着时间的推移，高考填志愿的时候却因瞬间的想法，而没有选择计算机这条路。人每个时期的想法真是不同。<br>现在已经毕业三年了，当我想再开始学习编程时，不知道社会还会不会给我机会。但我总想着学习到什么时候都不晚。即使现在我仍然只是会些皮毛。<br>我现在的状态很浮躁，很难静下心来去学习，去做什么。当在网上找到感兴趣的事物时，沉浸去研究的时候，这段时间是最幸福的，可以抛开一切烦恼什么都不去想，安心地去做它。<br>就好比这周末，认识了HEXO和GitHub。之前在自学java的时候，只是每天看着视频课件，从来都没有接触过新的东西，也无从知道。看到GitHub之后就像是看到新大陆一样，让我奋不顾身想上去一探究竟。<br>自此我才知道，程序员的世界，每天接触的还有这些东西。<br>我现在之所以想要选择做程序员，是因为他们每天都能接触到新的事物，每天要接受这个世界的新技术，并且还要为这个世界创造新技术，在我眼里，程序员就像是某一领域的创造者。<br>不知道未来的我什么时候才能自称程序员，但我现在仍为了这一目标而努力。<br>呃~写跑题了，我是一个说话没有主题的人。<br>从昨天到今天，HEXO部署成功，学到了很多东西，让我很happy，即便现在仍有许多小问题。可能这件事儿在很多人眼里看根本不算什么，但从开始到结束这一过程让我很开心。通过HEXO，还知道一些关于Node.js、Git的东西，还知道了Markdown…，一项事物往往是很多事物的集合。<br>好了，这就是我的周末。<br>写于2018年6月10日</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是个记性很差的人，一些东西经常不用就会忘记它们的使用方法，例如一些不经常用的命令。所以写博客成了一件很有意义的事情:  </p>
+<blockquote>
+<ol>
+<li>它可以记录很多事情，自己学会的新技能可以通过它记录下来  </li>
+<li>可以培养耐心，学会坚持做一件事儿  </li>
+<li>会产生成就感</li>
+</ol>
+</blockquote>
+<h1 id="vim的简单用法"><a href="#vim的简单用法" class="headerlink" title="vim的简单用法"></a>vim的简单用法</h1><p>工作模式有三种：<code>正常模式</code>、<code>插入模式</code>、<code>尾行模式</code><br><code>vim filename：打开文件，若不存在则新建</code><br><code>vim filename +n：打开文件，定位到第n行</code><br><code>vim filename +：打开文件，定位到末尾</code></p>
+<h2 id="正常模式"><a href="#正常模式" class="headerlink" title="正常模式"></a>正常模式</h2><p><code>esc：切换到正常模式</code><br><code>shift+zz：保存退出</code><br><code>gg：定位到首行</code><br><code>G：定位到尾行</code><br><code>ngg：定位到第n行</code><br><code>^：定位到行首</code><br><code>$：定位到行尾</code><br><code>yy：复制光标所在行</code><br><code>p：粘贴</code><br><code>nyy：复制光标开始的n行</code><br><code>dd：删除光标所在行，（或者剪切，按p复制）</code><br><code>ndd：删除光标开始的n行</code><br><code>u：撤销操作</code><br><code>ctrl+r：反撤销操作</code></p>
+<h2 id="插入模式"><a href="#插入模式" class="headerlink" title="插入模式"></a>插入模式</h2><p><code>i：在光标处插入</code><br><code>I：在行首插入</code><br><code>a：在光标下一个字符处插入</code><br><code>A：在行尾插入</code><br><code>o：在光标下一行插入空行</code><br><code>O：在光标上一行插入空行</code><br><code>s：删除光标所在字符并插入</code><br><code>S：删除光标所在行并插入</code></p>
+<h2 id="尾行模式"><a href="#尾行模式" class="headerlink" title="尾行模式"></a>尾行模式</h2><p><code>:w 退出</code><br><code>:q 退出</code><br><code>:wq 保存并退出</code><br><code>:x 保存并退出</code><br><code>:q! 强制退出</code><br><code>:set nu 显示行号</code><br><code>:set nonu 隐藏行号</code><br><code>:行号 定位到指定行号</code><br><code>/内容 查找指定内容，n下翻，N上翻</code><br><code>:%s/原内容/新内容 使用新内容替换原内容</code><br><code>:m,ns/原内容/新内容 使用新内容替换原内容，替换m到n行</code></p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>如果没有正常关闭vim，会生成一个交换文件，这个是需要删除的。<br>原文来自CSDN的博主AbeBetter，<a href="https://blog.csdn.net/abebetter/article/details/77542002" target="_blank" rel="noopener">原文地址</a>。<br>感谢博主给出这么简单直白的使用方法。</p>
 	  
 	</div>
 
@@ -140,13 +152,13 @@
 
     
     
-    <a href="/2018/06/11/六月日记：6月11日_N4语法/" type="button" class="btn btn-default"><i
+    <a href="/2018/06/11/Markdown易读易写/" type="button" class="btn btn-default"><i
                 class="fa fa-arrow-circle-o-left"></i> Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2018/06/10/小白部署HEXO到GitHub/" type="button" class="btn btn-default ">Next<i
+    <a href="/2018/06/11/六月日记：6月11日_N4语法/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -200,7 +212,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2018-06-10 
+	2018-06-11 
 	</div>
 	
 
@@ -224,13 +236,19 @@
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li><a href="/tags/Diary/">Diary<span>2</span></a></li>
+  <li><a href="/tags/vim/">vim<span>1</span></a></li>
     </ul>
 	</div>
 		
 
 	<!-- toc -->
 	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+		   <span class="toc-title">Contents</span>
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#前言"><span class="toc-article-text">前言</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#vim的简单用法"><span class="toc-article-text">vim的简单用法</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#正常模式"><span class="toc-article-text">正常模式</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#插入模式"><span class="toc-article-text">插入模式</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#尾行模式"><span class="toc-article-text">尾行模式</span></a></li></ol></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#结尾"><span class="toc-article-text">结尾</span></a></li></ol>
+		</div>
 	
 	</div>
 	
