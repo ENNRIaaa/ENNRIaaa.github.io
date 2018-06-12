@@ -3,9 +3,32 @@
   
     
     <entry>
+      <title>GitHub如何配置SSH</title>
+      <link href="/2018/GitHub%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AESSH/"/>
+      <url>/2018/GitHub%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AESSH/</url>
+      <content type="html"><![CDATA[<h1 id="生成SSH-Key"><a href="#生成SSH-Key" class="headerlink" title="生成SSH Key"></a>生成SSH Key</h1><p>在Git Bash终端输入命令：</p><p><pre><code><br>ssh-keygen -t rsa -C “<a href="mailto:china_liyan123@yahoo.co.jp" target="_blank" rel="noopener">china_liyan123@yahoo.co.jp</a>“<br></code></pre><br>此处邮箱替换为自己的邮箱地址。<br>此处终端提示：</p><blockquote><p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/shado/.ssh/id_rsa):  </p></blockquote><p>终端会让你选择存放SSH的路径，括号内的是默认路径。<br>回车选择默认路径之后，终端提示输入SSH密码，输入两次，此时输入的密码不会显示在终端上，输入完直接回车就可以。  </p><blockquote><p>Your identification has been saved in /c/Users/shado/.ssh/id_rsa.<br>Your public key has been saved in /c/Users/shado/.ssh/id_rsa.pub.</p></blockquote><p>之后终端提示密钥已经生成，在刚才选择的路径中，其中<code>id_rsa</code>是私有密钥，<code>id_rsa.pub</code>是公共密钥。  </p><h1 id="在GitHub中添加密钥"><a href="#在GitHub中添加密钥" class="headerlink" title="在GitHub中添加密钥"></a>在GitHub中添加密钥</h1><p>登陆GitHub，在页面右上角头像下拉菜单中单机<code>Setting</code>，设置页面左侧有<code>SSH and GPG keys</code>,在这个标签页下添加SSH。<br>右上角<code>New SSH key</code>，在本地刚刚保存SSH的路径，用文本编辑器打开<code>id_rsa.pub</code>，复制里面的内容，粘贴到<code>New SSH key</code>的key里面，Title自己定义一个标题就可以，之后Add。<br>回到终端，输入命令：</p><p><pre><code><br>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br></code></pre><br>此时终端提示：  </p><blockquote><p>Enter passphrase for key ‘/c/Users/shado/.ssh/id_rsa’:  </p></blockquote><p>输入之前的密码，此时密码也是不会显示在终端上的。<br>密码输入正确后，终端提示：  </p><blockquote><p>Hi ENNRIaaa! You’ve successfully authenticated, but GitHub does not provide shell access.</p></blockquote><p>说明SSH密钥已经配置成功。</p>]]></content>
+      
+      <categories>
+          
+          <category> 生活随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>六月日记：6月12日_N5语法</title>
-      <link href="/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8812%E6%97%A5_N5%E8%AF%AD%E6%B3%95/"/>
-      <url>/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8812%E6%97%A5_N5%E8%AF%AD%E6%B3%95/</url>
+      <link href="/2018/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8812%E6%97%A5_N5%E8%AF%AD%E6%B3%95/"/>
+      <url>/2018/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8812%E6%97%A5_N5%E8%AF%AD%E6%B3%95/</url>
       <content type="html"><![CDATA[<h1 id="名词的用法"><a href="#名词的用法" class="headerlink" title="名词的用法"></a>名词的用法</h1><h2 id="名词的普通形和礼貌形"><a href="#名词的普通形和礼貌形" class="headerlink" title="名词的普通形和礼貌形"></a>名词的普通形和礼貌形</h2><h2 id="名词的形态"><a href="#名词的形态" class="headerlink" title="名词的形态"></a>名词的形态</h2><h1 id="形容动词的用法"><a href="#形容动词的用法" class="headerlink" title="形容动词的用法"></a>形容动词的用法</h1>]]></content>
       
       <categories>
@@ -17,9 +40,9 @@
       
         <tags>
             
-            <tag> 日本語 </tag>
-            
             <tag> Diary </tag>
+            
+            <tag> 日本語 </tag>
             
             <tag> N5语法 </tag>
             
@@ -29,8 +52,8 @@
     
     <entry>
       <title>Markdown:易读易写</title>
-      <link href="/Markdown%E6%98%93%E8%AF%BB%E6%98%93%E5%86%99/"/>
-      <url>/Markdown%E6%98%93%E8%AF%BB%E6%98%93%E5%86%99/</url>
+      <link href="/2018/Markdown%E6%98%93%E8%AF%BB%E6%98%93%E5%86%99/"/>
+      <url>/2018/Markdown%E6%98%93%E8%AF%BB%E6%98%93%E5%86%99/</url>
       <content type="html"><![CDATA[<h1 id="关于Markdown"><a href="#关于Markdown" class="headerlink" title="关于Markdown"></a>关于Markdown</h1><blockquote><p>Markdown 的目标是实现「易读易写」。    </p></blockquote><p>由HEXO认识了Markdown，它简洁的语法，让我深深地爱上了它。今天是使用Markdown写博客的第二天，只用到一些简单的标签。<br>它给我最大的感觉就是格式非常清晰，看起来也非常的规整。有一种规规矩矩的感觉。<br>它兼容HTML，它可以在文本中使用HTML标签。  </p><blockquote><p>Markdown 语法的目标是：成为一种适用于网络的书写语言。<br><a id="more"></a><br>Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p></blockquote><h1 id="关于HEXO"><a href="#关于HEXO" class="headerlink" title="关于HEXO"></a>关于HEXO</h1><p>上周末部署HEXO到GitHub，今天发了几篇博客，深感Markdown和HEXO的魅力。或许是因为我是小白的缘故。<br>HEXO可以自动生成文章目录，它使得文章变得更清晰。其它的博客系统如何生成文章目录我还不知道。对于前端这块儿我是一点儿也不清楚的。或许将来我能通过自己的代码来达到我想要的功能。<br>使用Z-Blog，发文章是要先登陆到后台，然后在线通过编辑器写文。而使用HEXO搭配GitHub，则是写文再上传。在本地通过Markdown编辑器写好博客，然后再上传到GitHub上，这更让我有一种写博客的乐趣。</p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>我深知自己不懂的东西太多，但这更能让我知道如何充实我自己。</p>]]></content>
       
       <categories>
@@ -50,8 +73,8 @@
     
     <entry>
       <title>vim简单用法</title>
-      <link href="/vim%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/"/>
-      <url>/vim%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/</url>
+      <link href="/2018/vim%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/"/>
+      <url>/2018/vim%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/</url>
       <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是个记性很差的人，一些东西经常不用就会忘记它们的使用方法，例如一些不经常用的命令。所以写博客成了一件很有意义的事情:  </p><blockquote><ol><li>它可以记录很多事情，自己学会的新技能可以通过它记录下来  </li><li>可以培养耐心，学会坚持做一件事儿  </li><li>会产生成就感</li></ol></blockquote><h1 id="vim的简单用法"><a href="#vim的简单用法" class="headerlink" title="vim的简单用法"></a>vim的简单用法</h1><p>工作模式有三种：<code>正常模式</code>、<code>插入模式</code>、<code>尾行模式</code><br><code>vim filename：打开文件，若不存在则新建</code><br><code>vim filename +n：打开文件，定位到第n行</code><br><code>vim filename +：打开文件，定位到末尾</code><br><a id="more"></a></p><h2 id="正常模式"><a href="#正常模式" class="headerlink" title="正常模式"></a>正常模式</h2><p><code>esc：切换到正常模式</code><br><code>shift+zz：保存退出</code><br><code>gg：定位到首行</code><br><code>G：定位到尾行</code><br><code>ngg：定位到第n行</code><br><code>^：定位到行首</code><br><code>$：定位到行尾</code><br><code>yy：复制光标所在行</code><br><code>p：粘贴</code><br><code>nyy：复制光标开始的n行</code><br><code>dd：删除光标所在行，（或者剪切，按p复制）</code><br><code>ndd：删除光标开始的n行</code><br><code>u：撤销操作</code><br><code>ctrl+r：反撤销操作</code></p><h2 id="插入模式"><a href="#插入模式" class="headerlink" title="插入模式"></a>插入模式</h2><p><code>i：在光标处插入</code><br><code>I：在行首插入</code><br><code>a：在光标下一个字符处插入</code><br><code>A：在行尾插入</code><br><code>o：在光标下一行插入空行</code><br><code>O：在光标上一行插入空行</code><br><code>s：删除光标所在字符并插入</code><br><code>S：删除光标所在行并插入</code></p><h2 id="尾行模式"><a href="#尾行模式" class="headerlink" title="尾行模式"></a>尾行模式</h2><p><code>:w 退出</code><br><code>:q 退出</code><br><code>:wq 保存并退出</code><br><code>:x 保存并退出</code><br><code>:q! 强制退出</code><br><code>:set nu 显示行号</code><br><code>:set nonu 隐藏行号</code><br><code>:行号 定位到指定行号</code><br><code>/内容 查找指定内容，n下翻，N上翻</code><br><code>:%s/原内容/新内容 使用新内容替换原内容</code><br><code>:m,ns/原内容/新内容 使用新内容替换原内容，替换m到n行</code></p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>如果没有正常关闭vim，会生成一个交换文件，这个是需要删除的。<br>原文来自CSDN的博主AbeBetter，<a href="https://blog.csdn.net/abebetter/article/details/77542002" target="_blank" rel="noopener">原文地址</a>。<br>感谢博主给出这么简单直白的使用方法。</p>]]></content>
       
       <categories>
@@ -71,8 +94,8 @@
     
     <entry>
       <title>六月日记：6月11日_N4语法</title>
-      <link href="/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8811%E6%97%A5_N4%E8%AF%AD%E6%B3%95/"/>
-      <url>/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8811%E6%97%A5_N4%E8%AF%AD%E6%B3%95/</url>
+      <link href="/2018/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8811%E6%97%A5_N4%E8%AF%AD%E6%B3%95/"/>
+      <url>/2018/%E5%85%AD%E6%9C%88%E6%97%A5%E8%AE%B0%EF%BC%9A6%E6%9C%8811%E6%97%A5_N4%E8%AF%AD%E6%B3%95/</url>
       <content type="html"><![CDATA[<h1 id="可能动词"><a href="#可能动词" class="headerlink" title="可能动词"></a>可能动词</h1><h2 id="可能动词的变换方法"><a href="#可能动词的变换方法" class="headerlink" title="可能动词的变换方法"></a>可能动词的变换方法</h2><blockquote><p>五段动词：词尾由ウ段假名变为所在行的エ段假名后接る<br>一段动词：去掉词尾る后接られる<br>サ变动词：する＞できる<br>カ变动词：来（く）る＞来（こ）られる<br><code>注：所有的可能动词都是一段动词。可能动词不是表示动作二十表示状态，因此属于无意志动词。他动词的宾语用を表示，但是可能动词句中的对象一般用が表示。</code><br><a id="more"></a></p></blockquote><h2 id="可能动词的语法意思"><a href="#可能动词的语法意思" class="headerlink" title="可能动词的语法意思"></a>可能动词的语法意思</h2><ol><li>表示人的行为能力。可译为“能…；会…”<br><code>例：一人で学校へ行けますか。</code><br><code>例：私はローマ字しか書けません。</code>  </li><li>表示某种状态下行为的可能性。可译为“可以…”<br><code>例：ここに車が止められません。</code></li></ol><h2 id="可能动词的相关句型"><a href="#可能动词的相关句型" class="headerlink" title="可能动词的相关句型"></a>可能动词的相关句型</h2><p>～ことができる<br>①接续：动词字典形<br>意味：表示人的行为能力。“能…；会…”<br><code>例：ピアノを弾くことができますか。</code><br><code>例：妹は料理を作ることができます。</code><br>②接续：动词字典形<br>意味：表示某种状态下的行为的可能性。可译为：“可以…”<br><code>例：雪がたくさん降りましたから、今年スキーをすることができます。</code><br><code>例：ここに自転車を置くことができません。</code></p><h1 id="动词意向形"><a href="#动词意向形" class="headerlink" title="动词意向形"></a>动词意向形</h1><h2 id="动词意向形的变换方法"><a href="#动词意向形的变换方法" class="headerlink" title="动词意向形的变换方法"></a>动词意向形的变换方法</h2><blockquote><p>五段动词：词尾由ウ段假名变为所在行的オ段假名后接う<br>一段动词：去掉词尾る后接よう<br>サ变动词：する＞しよう<br>カ变动词：来る＞来よう</p></blockquote><h2 id="动词意向形的语法意思"><a href="#动词意向形的语法意思" class="headerlink" title="动词意向形的语法意思"></a>动词意向形的语法意思</h2><p>动词的意向形是「～ましょう」的简体形，用于简体句中，表示提议、劝诱、意志等。<br><code>例：冬休みに一緒にスキーに行こう。</code>  </p><h2 id="动词意向形的相关句型"><a href="#动词意向形的相关句型" class="headerlink" title="动词意向形的相关句型"></a>动词意向形的相关句型</h2><ol><li>～う/ようと　思う<br>～う/ようと　思っている<br>接续：动词意向形<br>意味：表示第一人称自己的意志。其中「～う/ようと　思っている」可以用第一人称，也可以用于第三人称。表示说话前已经下定了觉醒，现在还仍然持续着的意思。<br><code>連休は家でゆっくり休もうと思います。</code><br><code>父はお酒をやめようと思っています。</code>  </li><li>～う/ようと　する<br>①接续：动词意向形<br>意味：表示动作或者变化将要开始或者结束。无人称上的限制。可译为：“刚要…；将要…”<br><code>時計は午前八時を報せようとしています。</code><br><code>冬休みは終わろうとしています。</code><br>②接续：动词意向形<br>意味：表示某人努力去实现某目标。想要去做某事。无人称上的限制。可译为：“想要…”<br><code>例：娘は北京大学に入ろうとしています。</code><br><code>いくら思い出そうとしても、彼女の名前が思い出せない。</code></li></ol><h1 id="被动动词"><a href="#被动动词" class="headerlink" title="被动动词"></a>被动动词</h1><h2 id="被动动词的变换方法"><a href="#被动动词的变换方法" class="headerlink" title="被动动词的变换方法"></a>被动动词的变换方法</h2><blockquote><p>五段动词：词尾由ウ段假名变为所在行的ア段假名后接れる<br>一段动词：去掉词尾る后接られる<br>サ变动词：する＞される<br>カ变动词：来る＞来られる  </p></blockquote><p>注：所有的被动动词都是一段动词。</p><h2 id="被动动词的语法意思"><a href="#被动动词的语法意思" class="headerlink" title="被动动词的语法意思"></a>被动动词的语法意思</h2><p>待写</p><h1 id="使役态"><a href="#使役态" class="headerlink" title="使役态"></a>使役态</h1><h2 id="使役动词的变换方法"><a href="#使役动词的变换方法" class="headerlink" title="使役动词的变换方法"></a>使役动词的变换方法</h2><blockquote><p>五段动词：词尾由ウ段假名变为所在行的ア段假名后接せる<br>一段动词：去掉词尾る后接させる<br>サ变动词：する＞させる<br>カ变动词：来る＞来させる  </p></blockquote><p>注：所有的使役动词都是一段动词。</p><h2 id="使役态的语法意思"><a href="#使役态的语法意思" class="headerlink" title="使役态的语法意思"></a>使役态的语法意思</h2><ol><li>自动次的使役态<br>形式：AはBを自动词（せる/させる）<br>意味：表示强制或容许。即地位高的人A强制地位低的人B做某个行为，或者是容许地位低的人B的行为。<br><code>例：親は子供を塾に通わせます。</code><br><code>例：私は子供を買い物に行かせます。</code></li><li>他动词的使役态<br>形式：AはBに宾语を他动词（せる/させる）<br>意味：表示强制或容许。即地位高的人A强制地位低的人B做某个行为，或者是容许地位低的人B的行为。<br><code>例：私は子供に薬を飲ませました。</code><br><code>例：先生は学生に本を読ませます。</code></li><li>感情动词的使役态<br>形式：AはBを感情动词（せる/させる）<br>意味：表示A为了某种目的触发或者故意诱发B的感情达到某种状态。出现的动词常为表示感情的自动词。如「泣く、困る、笑う、怒る」等。<br><code>例：子供の時、体が弱くて、母を心配させました。</code><br><code>例：田中さんはいつも笑い話をして、皆を笑わせます。</code></li></ol><h2 id="使役态的相关句型"><a href="#使役态的相关句型" class="headerlink" title="使役态的相关句型"></a>使役态的相关句型</h2><p>～（さ）せてください　/　～（さ）せてくださいませんか　/　～（さ）せていただけませんか<br>接续：动词的使役形<br>意味：表示请求对方允许我做某事。其中「～（さ）せてくださいませんか/～（さ）せていただけませんか」比「～（さ）せてください」表达的更加委婉，礼貌。可译为：“请允许我…”<br><code>部長、この仕事は私にやらせてください。</code></p><h1 id="敬语"><a href="#敬语" class="headerlink" title="敬语"></a>敬语</h1><h2 id="尊敬语"><a href="#尊敬语" class="headerlink" title="尊敬语"></a>尊敬语</h2><h2 id="自谦语"><a href="#自谦语" class="headerlink" title="自谦语"></a>自谦语</h2><h2 id="礼貌语"><a href="#礼貌语" class="headerlink" title="礼貌语"></a>礼貌语</h2><h1 id="ば・と・たら・ては"><a href="#ば・と・たら・ては" class="headerlink" title="ば・と・たら・ては"></a>ば・と・たら・ては</h1><h2 id="假定形「～ば-たら」"><a href="#假定形「～ば-たら」" class="headerlink" title="假定形「～ば/たら」"></a>假定形「～ば/たら」</h2><h3 id="假定形的变换方法"><a href="#假定形的变换方法" class="headerlink" title="假定形的变换方法"></a>假定形的变换方法</h3><blockquote><p><strong>动词：词尾由ウ段假名变为所在行的エ段假名后接ば</strong><br>五段动词：<br><code>言う＞言えば</code><br><code>書く＞書けば</code><br><code>貸す＞貸せば</code><br><code>死ぬ＞死ねば</code><br>一段动词：<br><code>見る＞見れば</code><br><code>寝る＞寝れば</code><br><code>借りる＞借りれば</code><br><code>食べる＞食べれば</code><br>サ变动词：<br><code>する＞すれば</code><br>カ变动词：<br><code>来る＞来れば</code><br>形容词：词干+「ければ」<br><code>寒い＞寒ければ</code><br><code>よい/いい＞よければ</code><br>形容动词/名词：字典形+なら<br><code>便利＞便利なら</code><br><code>私＞私なら</code></p></blockquote><h3 id="假定形的语法意思"><a href="#假定形的语法意思" class="headerlink" title="假定形的语法意思"></a>假定形的语法意思</h3><ol><li>意味：表示恒定条件。强调必然性，客观性。表示通常一定会成立的规律性、法则性关系。<br><code>例：春が来れば、花が咲きます。</code><br><code>例：いい天気なら、向こうに島が見えます。</code>  </li><li>意味：表示假定条件。后句可以接表示人意志、判断、许可、希望等句型。<br><code>例：あなたが行けば、私も行きます。</code><br><code>例：使い方が簡単なら、私も買いたいです。</code>  </li><li>接续：各品词的字典形或者「た」形+なら<br>意味：用于承接对方的话题。后句叙述自己的意见或者劝告等。<br><code>例：旅行に行きたいですが、どこかいい所はありませんか。</code><br><code>スキーなら、北海道がいいですよ。</code></li></ol>]]></content>
       
       <categories>
@@ -84,6 +107,8 @@
       
         <tags>
             
+            <tag> Diary </tag>
+            
             <tag> 日本語 </tag>
             
             <tag> N4语法 </tag>
@@ -94,8 +119,8 @@
     
     <entry>
       <title>关于这个周末</title>
-      <link href="/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E5%91%A8%E6%9C%AB/"/>
-      <url>/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E5%91%A8%E6%9C%AB/</url>
+      <link href="/2018/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E5%91%A8%E6%9C%AB/"/>
+      <url>/2018/%E5%85%B3%E4%BA%8E%E8%BF%99%E4%B8%AA%E5%91%A8%E6%9C%AB/</url>
       <content type="html"><![CDATA[<h3 id="2018年6月10日-星期日"><a href="#2018年6月10日-星期日" class="headerlink" title="2018年6月10日-星期日"></a>2018年6月10日-星期日</h3><p>本来打算这周末是好好看日语的，但是却没能静下心来看，因为时间都花在搞HEXO和GitHub上了。<br>之前我是不知道GitHub的，因为前几天的新闻，微软75亿美元收购GitHub，所以对它有些印象。<br>之前在电脑上装过linux，然后了解到了开源，其实再早知道开源一词是因为Android，大概是在我上高中的时候，那时候Android手机刚刚进入市场，我的第一部Android手机是我大哥给我买的，HTC G8，当时还是Android 2.0的系统。那会儿每天都研究这个，一遍一遍的刷机，回想那时候，玩得真起劲。慢慢地，知道Android的底层是linux，知道它是一个开源的系统。但是仅仅停留在“字面意思”。<br>由linux系统开始深入了解它的背景，知道linus这个人，知道Git。当然，我现在仍然不知道Git到底是做什么的，也不清楚GitHub究竟是做什么的。<a id="more"></a><br>在我上小学的时候，我就想以后到大学要学计算机、学编程，然后开发出一款软件，一款游戏，再卖好多好多钱。可是随着时间的推移，高考填志愿的时候却因瞬间的想法，而没有选择计算机这条路。人每个时期的想法真是不同。<br>现在已经毕业三年了，当我想再开始学习编程时，不知道社会还会不会给我机会。但我总想着学习到什么时候都不晚。即使现在我仍然只是会些皮毛。<br>我现在的状态很浮躁，很难静下心来去学习，去做什么。当在网上找到感兴趣的事物时，沉浸去研究的时候，这段时间是最幸福的，可以抛开一切烦恼什么都不去想，安心地去做它。<br>就好比这周末，认识了HEXO和GitHub。之前在自学java的时候，只是每天看着视频课件，从来都没有接触过新的东西，也无从知道。看到GitHub之后就像是看到新大陆一样，让我奋不顾身想上去一探究竟。<br>自此我才知道，程序员的世界，每天接触的还有这些东西。<br>我现在之所以想要选择做程序员，是因为他们每天都能接触到新的事物，每天要接受这个世界的新技术，并且还要为这个世界创造新技术，在我眼里，程序员就像是某一领域的创造者。<br>不知道未来的我什么时候才能自称程序员，但我现在仍为了这一目标而努力。<br>呃~写跑题了，我是一个说话没有主题的人。<br>从昨天到今天，HEXO部署成功，学到了很多东西，让我很happy，即便现在仍有许多小问题。可能这件事儿在很多人眼里看根本不算什么，但从开始到结束这一过程让我很开心。通过HEXO，还知道一些关于Node.js、Git的东西，还知道了Markdown…，一项事物往往是很多事物的集合。<br>好了，这就是我的周末。<br><em>写于2018年6月10日</em></p>]]></content>
       
       <categories>
@@ -115,8 +140,8 @@
     
     <entry>
       <title>小白部署HEXO到GitHub</title>
-      <link href="/%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2HEXO%E5%88%B0GitHub/"/>
-      <url>/%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2HEXO%E5%88%B0GitHub/</url>
+      <link href="/2018/%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2HEXO%E5%88%B0GitHub/"/>
+      <url>/2018/%E5%B0%8F%E7%99%BD%E9%83%A8%E7%BD%B2HEXO%E5%88%B0GitHub/</url>
       <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>呃，终于忙乎完了！<br>从昨天傍晚的7点半一直到现在的2点50分，并且到目前都还在折腾，这也是第一篇文章，即将要上传到GitHub上的.<br>之前我是没有接触过GitHub和HEXO的，我现在在用的博客程序是z-blog，它部署在腾讯云，地址是：<a href="https:www.shiguangping.com" target="_blank" rel="noopener">时光瓶</a>,现在之所以搞hexo，是因为看到了一位前端大咖的博客，<a href="https://diygod.me/" target="_blank" rel="noopener">diygod.me</a>，看到之后很惊艳，由此认识到了hexo和GitHub.<br>通过维护这个博客开始我的学习之旅，慢慢了解GitHub，了解开源世界。<br>然后说一下现在正在用的这个HEXO主题，这个主题是像素风格的，很有魔性，所以就采用了。在此感谢主题的作者，作者的博客有关于这个主题的说明，虽然我看作者已经很久没有更新他的博客了，<a href="http://blackshow.me/" target="_blank" rel="noopener">主题作者</a>.<br><a id="more"></a></p><h1 id="本地安装HEXO"><a href="#本地安装HEXO" class="headerlink" title="本地安装HEXO"></a>本地安装HEXO</h1><p>hexo的官方文档：<a href="https://hexo.io/zh-cn/docs/" title="中文地址" target="_blank" rel="noopener">中文地址</a>，里面的安装步骤写得非常详细清晰。直到文档的“<strong>开始使用</strong>”部分的“<strong>配置</strong>”，到这里为止，博客本地部署基本完成。通过命令，在浏览器看一下页面的效果:命令如下：</p><p><pre><code><br>$ hexo server<br></code></pre><br>启动服务，默认情况下，使用浏览器访问地址://localhost:4000/，如果这个地址无效，可通过命令：</p><p><pre><code><br>$ hexo server -p 5000<br></code></pre><br>重设端口，再来来尝试一下，访问地址://localhost:5000/.如果可以正常访问，页面正常，说明本地配置OK。</p><h1 id="下载和安装主题"><a href="#下载和安装主题" class="headerlink" title="下载和安装主题"></a>下载和安装主题</h1><p>我使用的主题是<a href="http://blackshow.me" title="blackshow" target="_blank" rel="noopener">blackshow</a>编写的开源主题，该主题基于Freemind修改，样式替换为BOOTSTR.386.作者的博客里有提到。  </p><ol><li>安装主题：<br><pre><code><br>$ git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:blackshow/hexo-theme-freemind.386.git themes/freemind<br></code></pre>  </li><li>安装 hexo-tag-bootstrap （可选）:<br><pre><code><br>$ npm install hexo-tag-bootstrap –save<br></code></pre>  </li><li>安装 hexo-generatr-search （可选）：<br><pre><code><br>$ npm install hexo-generator-search –save<br></code></pre>  </li><li>创建页面：<br>Freemind 预先定义了 Categories（分类）、Tags（标签） 和 About（关于）页面，要使用它们，你需要先在你的博客的 <code>source</code> 目录中添加相应页面。<br>例如，要创建 <code>Categories</code> 页面，在终端上:<br><pre><code><br>$ cd /path/to/hexo/<br>hexo n page categories<br></code></pre><br>然后编辑 <code>source/categories/</code> 下的 index.md，内容如下：<br><pre><code><br>title: Categories<br>layout: categories<br><p>—</p><br></code></pre>  </li><li>关于主题的配置和一些相关问题，具体请参考主题作者的<a href="http://blackshow.me/2015/11/25/hexo-theme-freemind-386-readme-cn/" title="说明" target="_blank" rel="noopener">说明文档</a>和原作者关于Freemind的<a href="http://www.hahack.com/codes/hexo-theme-freemind/" title="说明文档" target="_blank" rel="noopener">说明文档</a>。  </li><li>每一步如果想预览，使用一下命令，通过浏览器预览访问本地预览：<br><pre><code><br>$ hexo server<br><pre><code></code></pre></code></pre></li></ol><h1 id="把本地HEXO部署到GitHub"><a href="#把本地HEXO部署到GitHub" class="headerlink" title="把本地HEXO部署到GitHub"></a>把本地HEXO部署到GitHub</h1><ol><li>注册GitHub帐号，然后登陆。    –废话    </li><li>在GitHub新建一个repository，页面的右上角有个加号，里面的New repository<br>这里的Repository Name要和前面的Owner名字相同，格式就是这样的ENNRIaaa.github.io，ENNRIaaa就是我的Owner名字，然后选择public，创建就可以了。  </li><li>编辑HEXO目录下的站点配置文件<code>_config.yml，</code>在最下面加上几行<br><pre><code><br>deploy:<br>   type: git<br>   repository: <a href="https://github.com/ENNRIaaa/ENNRIaaa.github.io.git" target="_blank" rel="noopener">https://github.com/ENNRIaaa/ENNRIaaa.github.io.git</a><br>   branch: master<br></code></pre><br>把地址替换为自己GitHub库的地址，然后通过命令：<br><pre><code><br>$ hexo c<br>$ hexo g<br>$ hexo d -g<br></code></pre><br>此时可能会提示输入GitHub的用户名和密码。我看网上有教程说此步骤需要配置SSH，这个由于我没有配置，也不太懂，所以不多说明。<br>本地文件上传到GitHub之后，访问刚才的<strong>ENNRIaaa.github.io</strong>，看看是否能正常访问到你的博客。</li></ol><h1 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h1><p>如果你不需要绑定个人域名，可以忽略这一步，博客可直接通过ENNRIaaa.github.io访问。  </p><ol><li>在你域名的解析页面添加解析，我是添加的CNAME，直接解析ENNRIaaa.github.io，有的人添加的A记录解析的博客的IP地址。  </li><li>在刚刚创建的GitHub的repository，选择Setting标签页，在下面的GitHub Pages里面有Custom domain，填上你的域名，Save就可以了。如果没有Custom domain，那就把GitHub Pages下的Source改为master branch。  </li><li>在访问绑定的域名，看看是否能正常访问到博客。</li></ol><h1 id="关于新建文章"><a href="#关于新建文章" class="headerlink" title="关于新建文章"></a>关于新建文章</h1><p>新建文章需要使用markdown文档编辑工具，我使用的是<a href="http://markdownpad.com/" target="_blank" rel="noopener">MarkdownPad</a>这款工具.<br>文章的头部通过这几个标签来定义标题，日期，描述，分类，标签等…（具体只能靠自己摸索）</p><p><pre><code><br>title: 小白部署HEXO到GitHub<br>date: 2018-06-10 02:38:31<br>description: 从傍晚到凌晨，HEXO和GitHub摸索中<br>categories: 生活随笔<br>tags: [hexo,GitHub]<br>toc: true<br>feature:<br></code></pre></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我从昨晚一直折腾到今天早晨，很累。<br>本文搭建的流程都靠记忆，因为之前没有接触过这些，我也不是编程工作者，所以很多都是通过baidu，google一点一点地查，遇到问题的时候，网上给出的答案也是很零散的。<br>我写的这个流程可能也有一些错误或者失误的地方，遇到问题只能自己摸索了。  </p><ol><li>关于命令以及配置文件.yml对格式的要求很严谨，例如:<br><pre><code><br>type: git<br></code></pre>  </li></ol><p>冒号：和后面的git之间都要有空格.  </p><ol start="2"><li>每次写完文章，都要有这三部曲：<br><pre><code><br>hexo c –删除public文件夹<br>hexo g –生成静态文件<br>hexo d -g –上传到GitHub仓库<br></code></pre>  </li><li>关于上面三个命令可参照主题作者的<a href="http://blackshow.me/2015/11/30/hexo-cheats/" target="_blank" rel="noopener">HEXO使用心得</a>这篇文章.<br>关于搭建和使用hexo，可以看看主题<a href="http://blackshow.me" target="_blank" rel="noopener">作者的博客</a>，他有几遍文章专门是介绍说明HEXO的使用的，很有帮助.  </li><li>还有一点，每次上传到GitHub之后，访问绑定的个人域名会出现404页面，之后重新到repository的Setting–&gt;GitHub Pages设置域名，才恢复正常。  </li><li>关于这个问题，到本地hexo目录下的source，添加一个名为CNAME的文件，文件内容是自己绑定的域名，例如sora.red,此方法可解决该问题。不会新建文件的可通过新建文本文档命名为CNAME，然后里面编辑内容，之后保存，最后删除掉该文档的后缀即可，即删除.txt。</li></ol><hr><p>本文到此结束。</p>]]></content>
       
       <categories>
