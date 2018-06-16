@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>HEXO问题：换电脑之后怎么办 | SORA | Yan Li&#39;s</title>
+  <meta name="author" content="Yan Li">
+  
+  <meta name="description" content="这是我在部署完HEXO之后想到的问题">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="HEXO问题：换电脑之后怎么办"/>
+  <meta property="og:site_name" content="SORA | Yan Li&#39;s"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-120591185-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">SORA | Yan Li&#39;s</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> HEXO问题：换电脑之后怎么办</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> 这是我在部署完HEXO之后想到的问题
+		 </div> <!-- alert -->
+	  		
+
+	  <h1 id="前言-可忽略不看"><a href="#前言-可忽略不看" class="headerlink" title="前言(可忽略不看)"></a>前言(可忽略不看)</h1><p>这个问题是在我部署完HEXO博客之后就想到的，我要是换了一台电脑或者重新装系统之后，还怎么更新HEXO博客呢？<br>我今天在网上开始寻找解决办法，上网一看才知道这是很多人很早以前就面临的问题，当然有很多大神做了解答，但是绝大多数的回答我都是看不懂的。大多数的办法是在同一个GitHub仓库创建两个分支，一个用来存放HEXO上传的静态页面，一个用来保存HEXO的本地源文件。但是对于我这个小白来说，仓库一词我都是最近才知道的，更别提分支了。还有一大堆的命令，我也看不懂所以然。<br>最后，我还是用了这个办法，在原有的仓库基础上再创建一个分支，用来保存本地的源文件。（网上主要的还是这个办法）<br>我试着把我的操作流程写下来，可能其中会有遗漏或者小错误，遇到问题只能自己解决了。因为我也是凭借自己理解操作的。<br><a id="more"></a></p>
+<h1 id="我为什么要把源文件上传到GitHub呢？"><a href="#我为什么要把源文件上传到GitHub呢？" class="headerlink" title="我为什么要把源文件上传到GitHub呢？"></a>我为什么要把源文件上传到GitHub呢？</h1><p>因为我今天在电脑上安装了Linux，所以以后敲字都要靠Linux了。  </p>
+<h1 id="一-解决方案："><a href="#一-解决方案：" class="headerlink" title="一.解决方案："></a>一.解决方案：</h1><h2 id="1-提前准备"><a href="#1-提前准备" class="headerlink" title="1.提前准备"></a>1.提前准备</h2><p>首先，不论是在另一台电脑上还是重新安装了系统，都要安装好<code>Node.js</code>和<code>Git</code>，还有<code>HEXO</code>，它们的安装方式具体参考HEXO的<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">说明文档</a>。  </p>
+<h2 id="2-操作流程"><a href="#2-操作流程" class="headerlink" title="2.操作流程"></a>2.操作流程</h2><p>1.登录到GitHub，打开HEXO所在的仓库，在<code>Branch</code>（分支）新建一个分支<code>hexo</code>，在仓库<code>Setting</code>下的<code>Branches</code>中，设置默认分支分<code>hexo</code>。<br>2.克隆GitHub上的XXX.github.io项目的文件到本地，命令如下：  </p>
+<p><pre><code><br>git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:ENNRIaaa/sora.red.git<br></code></pre><br>把链接换成自己仓库的链接。（我的是sora.red是因为我把仓库名修改了，正常默认格式是：XXX.github.io）。<br><em>注：克隆的文件夹保存在哪取决于你<code>Git bash</code>所在的位置，可通过<code>pwd</code>命令查看你当前所在位置。</em><br>3.克隆好之后，打开本地的文件夹，默认的文件夹名称是：<code>XXX.github.io</code>，把文件夹内除了<code>.git</code>文件夹之外的所有文件全部删除。我用的是Linux，<code>.git</code>是隐藏文件夹，不知道在Windows下是不是隐藏文件，如果是的话，打开<code>显示隐藏文件</code>。<br>4.之后把原电脑上的HEXO文件全部复制到这个<code>XXX.github.io</code>文件夹下。<br>5.复制完之后里面应该有一个名为<code>.gitignore</code>文件，如果没有的话在终端通过命令：</p>
+<p><pre><code><br>touch .gitignore<br></code></pre><br>创建一个。正常<code>.gitignore</code>的内容是：<br><code>.DS_Store</code><br><code>Thumbs.db</code><br><code>db.json</code><br><code>*.log</code><br><code>node_modules/</code><br><code>public/</code><br><code>.deploy*/</code><br>6.创建一个分支<code>hexo</code>并切换到这个分支上，命令如下：</p>
+<p><pre><code><br>git checkout -b hexo<br></code></pre><br>7.提交复制过来的文件到暂存区，命令如下：</p>
+<p><pre><code><br>git add - -all<br></code></pre><br>注意：<code>-</code>之间无空格！  </p>
+<p>8.提交，命令如下：</p>
+<p><pre><code><br>git commit -m “新建分支资源文件”<br></code></pre><br>引号内的内容自定义，就是一个备注。<br>9.推送分支到GitHub上，命令如下：</p>
+<p><pre><code><br>git push - -set-upstream origin hexo<br></code></pre><br>注意：<code>-</code>之间无空格！<br>推送成功之后，到GitHub仓库刷新一下，看看<code>hexo</code>分支下是否已经成功上传了本地的源文件。<br>到这里，本地的源文件已经上传成功了。以后更新HEXO本地源文件直接使用<code>git push</code>命令就可以了，HEXO发博客的操作跟以前一样，还是这三步：<code>hexo c</code>、<code>hexo g</code>、<code>hexo d -g</code>。  </p>
+<p><em>注：期间终端可能会提示需要输入一下密码啊，或者提示让你输入邮箱和用户名等，只需根据提示输入即可。<br>在安装完Git和node.js之后，我就把SSH密钥配置完了。设置GitHub的SSH密钥，可参考<a href="https://sora.red/2018/GitHub%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AESSH/">GitHub如何配置SSH</a>。</em>  </p>
+<h1 id="二-如果今后换电脑该如何操作"><a href="#二-如果今后换电脑该如何操作" class="headerlink" title="二.如果今后换电脑该如何操作"></a>二.如果今后换电脑该如何操作</h1><p>本地源文件保存到GitHub之后，今后在其他电脑上或者重装系统后，先把<code>Git</code>、<code>Node.js</code>、<code>HEXO</code>这些基本的都安装好,（<em>注意：<code>HEXO</code>安装好之后不要执行<code>hexo init</code>初始化命令</em>），再把GitHub上保存HEXO源文件的<code>hexo</code>分支克隆到本地即可。<br>克隆分支的命令：</p>
+<p><pre><code><br>git clone -b hexo <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:ENNRIaaa/sora.red.git<br></code></pre><br><code>-b</code>后面的是分支的名称，后面替换自己仓库的链接。</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>今天主要提供帮助的是CSDN博主LeonWuV,如果我的文章有一些地方看不懂，或者有错误，可参考<a href="https://blog.csdn.net/wxl1555/article/details/79293159" target="_blank" rel="noopener">此博主的文章</a>。<br>本文写了一个多小时，终于结束了。虽然很墨迹，但是很快乐。</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2018/一个更为先进的文本编辑器-Atom/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2018/GitHub如何配置SSH/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+    <div id="disqus_thread" class="ds-thread">
+        <script type="text/javascript">
+            /**
+             * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+                /*
+                 var disqus_config = function () {
+                 this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+                 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                 };
+                 */
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+
+                s.src = '//sara-red.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
+    </div>
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2018-06-13 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/生活随笔/">生活随笔<span>13</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/hexo/">hexo<span>5</span></a></li> <li><a href="/tags/GitHub/">GitHub<span>4</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+		   <span class="toc-title">Contents</span>
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#前言-可忽略不看"><span class="toc-article-text">前言(可忽略不看)</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#我为什么要把源文件上传到GitHub呢？"><span class="toc-article-text">我为什么要把源文件上传到GitHub呢？</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#一-解决方案："><span class="toc-article-text">一.解决方案：</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#1-提前准备"><span class="toc-article-text">1.提前准备</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#2-操作流程"><span class="toc-article-text">2.操作流程</span></a></li></ol></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#二-如果今后换电脑该如何操作"><span class="toc-article-text">二.如果今后换电脑该如何操作</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#结尾"><span class="toc-article-text">结尾</span></a></li></ol>
+		</div>
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+var disqus_shortname = 'sara-red';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2018 Yan Li
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a>,<a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>,<a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> and <a href="http://getbootstrap.com/" target="_blank">BOOTSTRA.386</a>. 
+     <br> Theme by <a href="https://github.com/blackshow/hexo-theme-freemind.386">Freemind.386</a>.</br>  
+     This web is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

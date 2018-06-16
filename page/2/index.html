@@ -128,11 +128,11 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2018/关于这个周末/" title="有了技术，才能冲出枷锁">关于这个周末</a>
+			<a href="/2018/HEXO问题换电脑之后怎么办/" title="这是我在部署完HEXO之后想到的问题">HEXO问题：换电脑之后怎么办</a>
 		</h3>
 		</div>
 	<div class="col-md-4">
-		<div class="date">post @ 2018-06-10  </div>
+		<div class="date">post @ 2018-06-13  </div>
 		</div>
 	</div>
 	
@@ -142,10 +142,10 @@
   <div class="row">
 	
 	
-		<h3 id="2018年6月10日-星期日"><a href="#2018年6月10日-星期日" class="headerlink" title="2018年6月10日-星期日"></a>2018年6月10日-星期日</h3><p>本来打算这周末是好好看日语的，但是却没能静下心来看，因为时间都花在搞HEXO和GitHub上了。<br>之前我是不知道GitHub的，因为前几天的新闻，微软75亿美元收购GitHub，所以对它有些印象。<br>之前在电脑上装过linux，然后了解到了开源，其实再早知道开源一词是因为Android，大概是在我上高中的时候，那时候Android手机刚刚进入市场，我的第一部Android手机是我大哥给我买的，HTC G8，当时还是Android 2.0的系统。那会儿每天都研究这个，一遍一遍的刷机，回想那时候，玩得真起劲。慢慢地，知道Android的底层是linux，知道它是一个开源的系统。但是仅仅停留在“字面意思”。<br>由linux系统开始深入了解它的背景，知道linus这个人，知道Git。当然，我现在仍然不知道Git到底是做什么的，也不清楚GitHub究竟是做什么的。
+		<h1 id="前言-可忽略不看"><a href="#前言-可忽略不看" class="headerlink" title="前言(可忽略不看)"></a>前言(可忽略不看)</h1><p>这个问题是在我部署完HEXO博客之后就想到的，我要是换了一台电脑或者重新装系统之后，还怎么更新HEXO博客呢？<br>我今天在网上开始寻找解决办法，上网一看才知道这是很多人很早以前就面临的问题，当然有很多大神做了解答，但是绝大多数的回答我都是看不懂的。大多数的办法是在同一个GitHub仓库创建两个分支，一个用来存放HEXO上传的静态页面，一个用来保存HEXO的本地源文件。但是对于我这个小白来说，仓库一词我都是最近才知道的，更别提分支了。还有一大堆的命令，我也看不懂所以然。<br>最后，我还是用了这个办法，在原有的仓库基础上再创建一个分支，用来保存本地的源文件。（网上主要的还是这个办法）<br>我试着把我的操作流程写下来，可能其中会有遗漏或者小错误，遇到问题只能自己解决了。因为我也是凭借自己理解操作的。<br>
 	
 	</div>
-  <a type="button" href="/2018/关于这个周末/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2018/HEXO问题换电脑之后怎么办/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -155,11 +155,11 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2018/小白部署HEXO到GitHub/" title="从傍晚到凌晨，HEXO和GitHub摸索中">小白部署HEXO到GitHub</a>
+			<a href="/2018/GitHub如何配置SSH/" title="GitHub配置SSH，今天学会的">GitHub如何配置SSH</a>
 		</h3>
 		</div>
 	<div class="col-md-4">
-		<div class="date">post @ 2018-06-10  </div>
+		<div class="date">post @ 2018-06-12  </div>
 		</div>
 	</div>
 	
@@ -169,10 +169,107 @@
   <div class="row">
 	
 	
-		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>呃，终于忙乎完了！<br>从昨天傍晚的7点半一直到现在的2点50分，并且到目前都还在折腾，这也是第一篇文章，即将要上传到GitHub上的.<br>之前我是没有接触过GitHub和HEXO的，我现在在用的博客程序是z-blog，它部署在腾讯云，地址是：<a href="https:www.shiguangping.com" target="_blank" rel="noopener">时光瓶</a>,现在之所以搞hexo，是因为看到了一位前端大咖的博客，<a href="https://diygod.me/" target="_blank" rel="noopener">diygod.me</a>，看到之后很惊艳，由此认识到了hexo和GitHub.<br>通过维护这个博客开始我的学习之旅，慢慢了解GitHub，了解开源世界。<br>然后说一下现在正在用的这个HEXO主题，这个主题是像素风格的，很有魔性，所以就采用了。在此感谢主题的作者，作者的博客有关于这个主题的说明，虽然我看作者已经很久没有更新他的博客了，<a href="http://blackshow.me/" target="_blank" rel="noopener">主题作者</a>.<br>
+		<h1 id="生成SSH-Key"><a href="#生成SSH-Key" class="headerlink" title="生成SSH Key"></a>生成SSH Key</h1><p>在Git Bash终端输入命令：</p>
+<p><pre><code><br>ssh-keygen -t rsa -C “<a href="mailto:china_liyan123@yahoo.co.jp" target="_blank" rel="noopener">china_liyan123@yahoo.co.jp</a>“<br></code></pre><br>此处邮箱替换为自己的邮箱地址。<br>此处终端提示：</p>
+<blockquote>
+<p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/shado/.ssh/id_rsa):<br>
 	
 	</div>
-  <a type="button" href="/2018/小白部署HEXO到GitHub/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2018/GitHub如何配置SSH/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2018/六月日记：6月12日_N5语法/" title="今天写一篇日语N5语法">六月日记：6月12日_N5语法</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2018-06-12  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="名词的用法"><a href="#名词的用法" class="headerlink" title="名词的用法"></a>名词的用法</h1><h2 id="名词的普通形和礼貌形"><a href="#名词的普通形和礼貌形" class="headerlink" title="名词的普通形和礼貌形"></a>名词的普通形和礼貌形</h2><h2 id="名词的形态"><a href="#名词的形态" class="headerlink" title="名词的形态"></a>名词的形态</h2><h1 id="形容动词的用法"><a href="#形容动词的用法" class="headerlink" title="形容动词的用法"></a>形容动词的用法</h1>
+	
+	</div>
+  <a type="button" href="/2018/六月日记：6月12日_N5语法/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2018/Markdown易读易写/" title="给了我一种敲字的乐趣">Markdown:易读易写</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2018-06-11  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="关于Markdown"><a href="#关于Markdown" class="headerlink" title="关于Markdown"></a>关于Markdown</h1><blockquote>
+<p>Markdown 的目标是实现「易读易写」。    </p>
+</blockquote>
+<p>由HEXO认识了Markdown，它简洁的语法，让我深深地爱上了它。今天是使用Markdown写博客的第二天，只用到一些简单的标签。<br>它给我最大的感觉就是格式非常清晰，看起来也非常的规整。有一种规规矩矩的感觉。<br>它兼容HTML，它可以在文本中使用HTML标签。  </p>
+<blockquote>
+<p>Markdown 语法的目标是：成为一种适用于网络的书写语言。<br>
+	
+	</div>
+  <a type="button" href="/2018/Markdown易读易写/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
+			<a href="/2018/vim简单用法/" title="vim编辑器的简单命令，刚接触vim的我，它是个大麻烦">vim简单用法</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2018-06-11  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是个记性很差的人，一些东西经常不用就会忘记它们的使用方法，例如一些不经常用的命令。所以写博客成了一件很有意义的事情:  </p>
+<blockquote>
+<ol>
+<li>它可以记录很多事情，自己学会的新技能可以通过它记录下来  </li>
+<li>可以培养耐心，学会坚持做一件事儿  </li>
+<li>会产生成就感</li>
+</ol>
+</blockquote>
+<h1 id="vim的简单用法"><a href="#vim的简单用法" class="headerlink" title="vim的简单用法"></a>vim的简单用法</h1><p>工作模式有三种：<code>正常模式</code>、<code>插入模式</code>、<code>尾行模式</code><br><code>vim filename：打开文件，若不存在则新建</code><br><code>vim filename +n：打开文件，定位到第n行</code><br><code>vim filename +：打开文件，定位到末尾</code><br>
+	
+	</div>
+  <a type="button" href="/2018/vim简单用法/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -191,7 +288,7 @@
 
         <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
  
-          <a type="button" class="btn btn-default disabled">Next<i class="fa fa-arrow-circle-o-right"></i></a>
+       <a href="/page/3/" type="button" class="btn btn-default ">Next<i class="fa fa-arrow-circle-o-right"></i></a>     
         
 
   
@@ -223,7 +320,7 @@
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/生活随笔/">生活随笔<span>7</span></a></li>
+			<li><a href="/categories/生活随笔/">生活随笔<span>13</span></a></li>
 		
 		</ul>
 	</div>
@@ -234,21 +331,29 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/N5语法/">N5语法<span>1</span></a></li>
-		
-			<li><a href="/tags/hexo/">hexo<span>2</span></a></li>
-		
-			<li><a href="/tags/GitHub/">GitHub<span>2</span></a></li>
-		
-			<li><a href="/tags/日本語/">日本語<span>2</span></a></li>
+			<li><a href="/tags/vim/">vim<span>1</span></a></li>
 		
 			<li><a href="/tags/markdown/">markdown<span>1</span></a></li>
 		
-			<li><a href="/tags/Diary/">Diary<span>3</span></a></li>
+			<li><a href="/tags/N5语法/">N5语法<span>1</span></a></li>
+		
+			<li><a href="/tags/日本語/">日本語<span>2</span></a></li>
+		
+			<li><a href="/tags/Burst/">Burst<span>1</span></a></li>
 		
 			<li><a href="/tags/N4语法/">N4语法<span>1</span></a></li>
 		
-			<li><a href="/tags/vim/">vim<span>1</span></a></li>
+			<li><a href="/tags/Atom/">Atom<span>1</span></a></li>
+		
+			<li><a href="/tags/Linux/">Linux<span>2</span></a></li>
+		
+			<li><a href="/tags/GitHub/">GitHub<span>4</span></a></li>
+		
+			<li><a href="/tags/hexo/">hexo<span>5</span></a></li>
+		
+			<li><a href="/tags/alias/">alias<span>1</span></a></li>
+		
+			<li><a href="/tags/Diary/">Diary<span>3</span></a></li>
 		
 		 
 		</ul>
@@ -262,23 +367,23 @@
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2018/GitHub如何配置SSH/"  title="GitHub配置SSH，今天学会的" ><i class="fa fa-file-o"></i>GitHub如何配置SSH</a>
+        <a href="/2018/hexo g构建静态文件无法生成index.html等文件/"  title="电脑重装系统,之后安装HEXO出现的问题" ><i class="fa fa-file-o"></i>hexo g构建静态文件无法生成index.html等文件</a>
       </li>
     
       <li>
-        <a href="/2018/六月日记：6月12日_N5语法/"  title="今天写一篇日语N5语法" ><i class="fa fa-file-o"></i>六月日记：6月12日_N5语法</a>
+        <a href="/2018/因王自如和罗永浩对战所引发的感想/"  title="在YouTube上看到几年前的视频所引发的感想" ><i class="fa fa-file-o"></i>因王自如和罗永浩对战所引发的感想</a>
       </li>
     
       <li>
-        <a href="/2018/Markdown易读易写/"  title="给了我一种敲字的乐趣" ><i class="fa fa-file-o"></i>Markdown:易读易写</a>
+        <a href="/2018/Linux的几个有趣命令/"  title="新手必会的几个命令，自娱自乐" ><i class="fa fa-file-o"></i>Linux的几个有趣命令</a>
       </li>
     
       <li>
-        <a href="/2018/vim简单用法/"  title="vim编辑器的简单命令，刚接触vim的我，它是个大麻烦" ><i class="fa fa-file-o"></i>vim简单用法</a>
+        <a href="/2018/在Linux中使配置alias永久生效/"  title="alias简化了命令，但是每一次都要重新配置有很困扰" ><i class="fa fa-file-o"></i>在Linux中使配置alias永久生效</a>
       </li>
     
       <li>
-        <a href="/2018/六月日记：6月11日_N4语法/"  title="今天不知道写什么内容，所以写一篇日语N4语法" ><i class="fa fa-file-o"></i>六月日记：6月11日_N4语法</a>
+        <a href="/2018/一个更为先进的文本编辑器-Atom/"  title="GitHub打造的跨平台文本编辑器" ><i class="fa fa-file-o"></i>一个更为先进的文本编辑器-Atom</a>
       </li>
     
   </ul>
