@@ -3,20 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: SORA | Yan Li's
-subtitle: Dream come true = Dare to fantasize + Action
-description: Yan Li's blogs on github
-keywords: LIYAN,sora
+title: 时光瓶〜李炎の生活日誌〜
+subtitle: 时光瓶
+description: 记录李炎生活的点点滴滴
+keywords: LIYAN,李炎,时光瓶
 author: Yan Li
 language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://sora.red
+url: https://www.shiguangping.com
 root: /
-permalink: :year/:title/
+permalink: :year/:month/:title/
 permalink_defaults:
+pretty_urls.trailing_index: false
 
 # Directory
 source_dir: source
@@ -50,7 +51,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 5
+  per_page: 
   order_by: -date
   
 # Category & Tag
@@ -67,13 +68,13 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 5
+per_page: 
 pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-freemind.386
+theme: yinwang
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,4 +83,4 @@ deploy:
   type: git
   repository: https://github.com/ENNRIaaa/ENNRIaaa.github.io.git
   branch: master
-disqus_shortname: sara-red
+disqus_shortname: shiguangping-blog
