@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=0.5"><link rel="stylesheet" href="/css/post.css"><link rel="icon" href="/favicon.ico"><title>在Linux中使配置alias永久生效</title></head><body>　　<div class="inner"><h2>在Linux中使配置alias永久生效</h2><h1 id="编辑-bashrc"><a href="#编辑-bashrc" class="headerlink" title="编辑.bashrc"></a>编辑.bashrc</h1><p>在终端，通过命令回家：</p>
+<p><pre><code><br>cd ~<br></code></pre><br>之后通过文本编辑器编辑文本<code>.bashrc</code>：</p>
+<p><pre><code><br>sudo gedit .bashrc<br></code></pre><br>或者，使用vim编辑：</p>
+<p><pre><code><br>sudo vim .bashrc<br></code></pre><br><a id="more"></a><br>如果没有<code>.bashrc</code>文件，可以自己创建一个，创建也使用上面的命令。<br><em>注：<code>.bashrc</code>是隐藏文件，在文件管理器中查看时需要勾选<code>显示隐藏文件</code>。</em><br>在<code>.bashrc</code>最后一行添加你要设置的alias命令，例如：</p>
+<p><pre><code><br>alias hxc=’rm -f ~/blog/db.json &amp;&amp; hexo clean’<br></code></pre><br>如果是新建的<code>.bashrc</code>文件，直接在里面添加alias命令就可以，命令是一行一行的。<br>添加完之后保存，再通过source命令使刚才的配置文件生效：  </p>
+<p><pre><code><br>source .bashrc<br></code></pre><br>再在终端敲击<code>alias</code>命令，查看已经配置的alias命令，发现刚才编辑的命令都已经出现了。</p>
+<h1 id="编辑-bash-profile"><a href="#编辑-bash-profile" class="headerlink" title="编辑.bash_profile"></a>编辑.bash_profile</h1><p>在<code>.bash_profile</code>最后一行添加一条命令：</p>
+<p><pre><code><br>source ~/.bash_profile<br></code></pre><br>注：如果没有<code>.bash_profile</code>文件就新建一个。<br>添加完之后保存退出，终端通过source命令使配置生效：</p>
+<p><pre><code><br>source .bash_profile<br></code></pre><br>此时可以重新打开终端，输入<code>alias</code>命令，查看配置的alias是否已经生效。</p>
+</div><script src="/js/jquery.min.js"></script><script src="/js/main.js"></script></body></html>

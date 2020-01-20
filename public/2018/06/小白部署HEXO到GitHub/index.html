@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=0.5"><link rel="stylesheet" href="/css/post.css"><link rel="icon" href="/favicon.ico"><title>小白部署HEXO到GitHub</title></head><body>　　<div class="inner"><h2>小白部署HEXO到GitHub</h2><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>呃，终于忙乎完了！<br>从昨天傍晚的7点半一直到现在的2点50分，并且到目前都还在折腾，这也是第一篇文章，即将要上传到GitHub上的.<br>之前我是没有接触过GitHub和HEXO的，我现在在用的博客程序是z-blog，它部署在腾讯云，地址是：<a href="https:www.shiguangping.com" target="_blank" rel="noopener">时光瓶</a>,现在之所以搞hexo，是因为看到了一位前端大咖的博客，<a href="https://diygod.me/" target="_blank" rel="noopener">diygod.me</a>，看到之后很惊艳，由此认识到了hexo和GitHub.<br>通过维护这个博客开始我的学习之旅，慢慢了解GitHub，了解开源世界。<br>然后说一下现在正在用的这个HEXO主题，这个主题是像素风格的，很有魔性，所以就采用了。在此感谢主题的作者，作者的博客有关于这个主题的说明，虽然我看作者已经很久没有更新他的博客了，<a href="http://blackshow.me/" target="_blank" rel="noopener">主题作者</a>.<br><a id="more"></a></p>
+<h1 id="本地安装HEXO"><a href="#本地安装HEXO" class="headerlink" title="本地安装HEXO"></a>本地安装HEXO</h1><p>hexo的官方文档：<a href="https://hexo.io/zh-cn/docs/" title="中文地址" target="_blank" rel="noopener">中文地址</a>，里面的安装步骤写得非常详细清晰。直到文档的“<strong>开始使用</strong>”部分的“<strong>配置</strong>”，到这里为止，博客本地部署基本完成。通过命令，在浏览器看一下页面的效果:命令如下：</p>
+<p><pre><code><br>$ hexo server<br></code></pre><br>启动服务，默认情况下，使用浏览器访问地址://localhost:4000/，如果这个地址无效，可通过命令：</p>
+<p><pre><code><br>$ hexo server -p 5000<br></code></pre><br>重设端口，再来来尝试一下，访问地址://localhost:5000/.如果可以正常访问，页面正常，说明本地配置OK。</p>
+<h1 id="下载和安装主题"><a href="#下载和安装主题" class="headerlink" title="下载和安装主题"></a>下载和安装主题</h1><p>我使用的主题是<a href="http://blackshow.me" title="blackshow" target="_blank" rel="noopener">blackshow</a>编写的开源主题，该主题基于Freemind修改，样式替换为BOOTSTR.386.作者的博客里有提到。  </p>
+<ol>
+<li>安装主题：<br><pre><code><br>$ git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:blackshow/hexo-theme-freemind.386.git themes/freemind<br></code></pre>  </li>
+<li>安装 hexo-tag-bootstrap （可选）:<br><pre><code><br>$ npm install hexo-tag-bootstrap –save<br></code></pre>  </li>
+<li>安装 hexo-generatr-search （可选）：<br><pre><code><br>$ npm install hexo-generator-search –save<br></code></pre>  </li>
+<li>创建页面：<br>Freemind 预先定义了 Categories（分类）、Tags（标签） 和 About（关于）页面，要使用它们，你需要先在你的博客的 <code>source</code> 目录中添加相应页面。<br>例如，要创建 <code>Categories</code> 页面，在终端上:<br><pre><code><br>$ cd /path/to/hexo/<br>hexo n page categories<br></code></pre><br>然后编辑 <code>source/categories/</code> 下的 index.md，内容如下：<br><pre><code><br>title: Categories<br>layout: categories<br><p>—</p><br></code></pre>  </li>
+<li>关于主题的配置和一些相关问题，具体请参考主题作者的<a href="http://blackshow.me/2015/11/25/hexo-theme-freemind-386-readme-cn/" title="说明" target="_blank" rel="noopener">说明文档</a>和原作者关于Freemind的<a href="http://www.hahack.com/codes/hexo-theme-freemind/" title="说明文档" target="_blank" rel="noopener">说明文档</a>。  </li>
+<li>每一步如果想预览，使用一下命令，通过浏览器预览访问本地预览：<br><pre><code><br>$ hexo server<br><pre><code></code></pre></code></pre></li>
+</ol>
+<h1 id="把本地HEXO部署到GitHub"><a href="#把本地HEXO部署到GitHub" class="headerlink" title="把本地HEXO部署到GitHub"></a>把本地HEXO部署到GitHub</h1><ol>
+<li>注册GitHub帐号，然后登陆。    –废话    </li>
+<li>在GitHub新建一个repository，页面的右上角有个加号，里面的New repository<br>这里的Repository Name要和前面的Owner名字相同，格式就是这样的ENNRIaaa.github.io，ENNRIaaa就是我的Owner名字，然后选择public，创建就可以了。  </li>
+<li>编辑HEXO目录下的站点配置文件<code>_config.yml，</code>在最下面加上几行<br><pre><code><br>deploy:<br>   type: git<br>   repository: <a href="https://github.com/ENNRIaaa/ENNRIaaa.github.io.git" target="_blank" rel="noopener">https://github.com/ENNRIaaa/ENNRIaaa.github.io.git</a><br>   branch: master<br></code></pre><br>把地址替换为自己GitHub库的地址，然后通过命令：<br><pre><code><br>$ hexo c<br>$ hexo g<br>$ hexo d -g<br></code></pre><br>此时可能会提示输入GitHub的用户名和密码。我看网上有教程说此步骤需要配置SSH，这个由于我没有配置，也不太懂，所以不多说明。<br>本地文件上传到GitHub之后，访问刚才的<strong>ENNRIaaa.github.io</strong>，看看是否能正常访问到你的博客。</li>
+</ol>
+<h1 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h1><p>如果你不需要绑定个人域名，可以忽略这一步，博客可直接通过ENNRIaaa.github.io访问。  </p>
+<ol>
+<li>在你域名的解析页面添加解析，我是添加的CNAME，直接解析ENNRIaaa.github.io，有的人添加的A记录解析的博客的IP地址。  </li>
+<li>在刚刚创建的GitHub的repository，选择Setting标签页，在下面的GitHub Pages里面有Custom domain，填上你的域名，Save就可以了。如果没有Custom domain，那就把GitHub Pages下的Source改为master branch。  </li>
+<li>在访问绑定的域名，看看是否能正常访问到博客。</li>
+</ol>
+<h1 id="关于新建文章"><a href="#关于新建文章" class="headerlink" title="关于新建文章"></a>关于新建文章</h1><p>新建文章需要使用markdown文档编辑工具，我使用的是<a href="http://markdownpad.com/" target="_blank" rel="noopener">MarkdownPad</a>这款工具.<br>文章的头部通过这几个标签来定义标题，日期，描述，分类，标签等…（具体只能靠自己摸索）</p>
+<p><pre><code><br>title: 小白部署HEXO到GitHub<br>date: 2018-06-10 02:38:31<br>description: 从傍晚到凌晨，HEXO和GitHub摸索中<br>categories: 生活随笔<br>tags: [hexo,GitHub]<br>toc: true<br>feature:<br></code></pre></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我从昨晚一直折腾到今天早晨，很累。<br>本文搭建的流程都靠记忆，因为之前没有接触过这些，我也不是编程工作者，所以很多都是通过baidu，google一点一点地查，遇到问题的时候，网上给出的答案也是很零散的。<br>我写的这个流程可能也有一些错误或者失误的地方，遇到问题只能自己摸索了。  </p>
+<ol>
+<li>关于命令以及配置文件.yml对格式的要求很严谨，例如:<br><pre><code><br>type: git<br></code></pre>  </li>
+</ol>
+<p>冒号：和后面的git之间都要有空格.  </p>
+<ol start="2">
+<li>每次写完文章，都要有这三部曲：<br><pre><code><br>hexo c –删除public文件夹<br>hexo g –生成静态文件<br>hexo d -g –上传到GitHub仓库<br></code></pre>  </li>
+<li>关于上面三个命令可参照主题作者的<a href="http://blackshow.me/2015/11/30/hexo-cheats/" target="_blank" rel="noopener">HEXO使用心得</a>这篇文章.<br>关于搭建和使用hexo，可以看看主题<a href="http://blackshow.me" target="_blank" rel="noopener">作者的博客</a>，他有几遍文章专门是介绍说明HEXO的使用的，很有帮助.  </li>
+<li>还有一点，每次上传到GitHub之后，访问绑定的个人域名会出现404页面，之后重新到repository的Setting–&gt;GitHub Pages设置域名，才恢复正常。  </li>
+<li>关于这个问题，到本地hexo目录下的source，添加一个名为CNAME的文件，文件内容是自己绑定的域名，例如sora.red,此方法可解决该问题。不会新建文件的可通过新建文本文档命名为CNAME，然后里面编辑内容，之后保存，最后删除掉该文档的后缀即可，即删除.txt。</li>
+</ol>
+<hr>
+<p>本文到此结束。</p>
+</div><script src="/js/jquery.min.js"></script><script src="/js/main.js"></script></body></html>

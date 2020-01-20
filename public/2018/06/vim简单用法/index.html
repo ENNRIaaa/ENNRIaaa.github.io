@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=0.5"><link rel="stylesheet" href="/css/post.css"><link rel="icon" href="/favicon.ico"><title>vim简单用法</title></head><body>　　<div class="inner"><h2>vim简单用法</h2><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是个记性很差的人，一些东西经常不用就会忘记它们的使用方法，例如一些不经常用的命令。所以写博客成了一件很有意义的事情:  </p>
+<blockquote>
+<ol>
+<li>它可以记录很多事情，自己学会的新技能可以通过它记录下来  </li>
+<li>可以培养耐心，学会坚持做一件事儿  </li>
+<li>会产生成就感</li>
+</ol>
+</blockquote>
+<h1 id="vim的简单用法"><a href="#vim的简单用法" class="headerlink" title="vim的简单用法"></a>vim的简单用法</h1><p>工作模式有三种：<code>正常模式</code>、<code>插入模式</code>、<code>尾行模式</code><br><code>vim filename：打开文件，若不存在则新建</code><br><code>vim filename +n：打开文件，定位到第n行</code><br><code>vim filename +：打开文件，定位到末尾</code><br><a id="more"></a></p>
+<h2 id="正常模式"><a href="#正常模式" class="headerlink" title="正常模式"></a>正常模式</h2><p><code>esc：切换到正常模式</code><br><code>shift+zz：保存退出</code><br><code>gg：定位到首行</code><br><code>G：定位到尾行</code><br><code>ngg：定位到第n行</code><br><code>^：定位到行首</code><br><code>$：定位到行尾</code><br><code>yy：复制光标所在行</code><br><code>p：粘贴</code><br><code>nyy：复制光标开始的n行</code><br><code>dd：删除光标所在行，（或者剪切，按p复制）</code><br><code>ndd：删除光标开始的n行</code><br><code>u：撤销操作</code><br><code>ctrl+r：反撤销操作</code></p>
+<h2 id="插入模式"><a href="#插入模式" class="headerlink" title="插入模式"></a>插入模式</h2><p><code>i：在光标处插入</code><br><code>I：在行首插入</code><br><code>a：在光标下一个字符处插入</code><br><code>A：在行尾插入</code><br><code>o：在光标下一行插入空行</code><br><code>O：在光标上一行插入空行</code><br><code>s：删除光标所在字符并插入</code><br><code>S：删除光标所在行并插入</code></p>
+<h2 id="尾行模式"><a href="#尾行模式" class="headerlink" title="尾行模式"></a>尾行模式</h2><p><code>:w 退出</code><br><code>:q 退出</code><br><code>:wq 保存并退出</code><br><code>:x 保存并退出</code><br><code>:q! 强制退出</code><br><code>:set nu 显示行号</code><br><code>:set nonu 隐藏行号</code><br><code>:行号 定位到指定行号</code><br><code>/内容 查找指定内容，n下翻，N上翻</code><br><code>:%s/原内容/新内容 使用新内容替换原内容</code><br><code>:m,ns/原内容/新内容 使用新内容替换原内容，替换m到n行</code></p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>如果没有正常关闭vim，会生成一个交换文件，这个是需要删除的。<br>原文来自CSDN的博主AbeBetter，<a href="https://blog.csdn.net/abebetter/article/details/77542002" target="_blank" rel="noopener">原文地址</a>。<br>感谢博主给出这么简单直白的使用方法。</p>
+</div><script src="/js/jquery.min.js"></script><script src="/js/main.js"></script></body></html>

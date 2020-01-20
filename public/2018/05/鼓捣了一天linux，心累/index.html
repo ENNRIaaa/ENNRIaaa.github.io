@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=0.5"><link rel="stylesheet" href="/css/post.css"><link rel="icon" href="/favicon.ico"><title>鼓捣了一天linux，心累</title></head><body>　　<div class="inner"><h2>鼓捣了一天linux，心累</h2><p>现在是北京时间20：50</p>
+<p>其实从昨晚开始，就在研究怎么把linux（Ubuntu）安装到U盘里面。</p>
+<p>我昨天下载的不是ubuntu，而是一个叫做semicode OS的linux发行版，这个发行版是在B站无意中看到的，感觉界面比较好看，就想着安装一下试试，可是尝试安装了很多次，都是以安装器崩溃而告终。今天早晨6点钟起床又开始鼓捣,尝试多次无果后，决定放弃，开始转战ubuntu了。下载，安装一步到位。</p>
+<p>之前是没有接触过linux的，但是对于这个系统也早有耳闻，很难用，应该说是很难。很多用过的大神都说linux比windows强，其实强不强我是感觉不到的，因为我不会用。其实对于一般用户而言，是用不到linux的，因为这个系统就算有图形界面，使用起来也是极为复杂，一般只用来看视频，听音乐，打游戏，或者办公整理文档的人，还是推荐用windows的。我个人感觉，说linux就是比windows强的人，绝对不是专业的，树叶有专攻，各有所长吧。</p>
+<p>我这个业余的人，不能说太多。</p>
+<p>从早晨6点开始，直到现在已经深夜9点，除去吃饭和下午下楼取快递，其余时间一直坐在电脑前。</p>
+<p>今天经历了这样的一个流程：装系统–&gt;再次装系统（由于失误删掉了系统文件夹usr）–&gt;安装jdk–&gt;安装eclipse–&gt;安装python3–&gt;安装pycharm，我不是程序员，也不是技术宅，所以花费了很长时间才搞好这些，期间还出现了各种各样的问题。</p>
+<p>linux安装程序其实真的很麻烦，可能是我刚接触的缘故。linux安装各种程序的过程大多都依赖终端，需要敲一些命令才能完成。</p>
+<p>期间我因为不太清楚linux里面的系统文件夹，不小心就把usr文件夹给删掉了，结果就是桌面上什么东西都没有了，我不知道该怎么挽救，所以只能重新装一遍系统。</p>
+<p>首先把终端常用的命令列举出来：</p>
+<p><code>pwd</code>    看你当前处在哪里，处在哪个文件夹</p>
+<p><code>ls</code>    查看当前文件夹都有哪些内容</p>
+<p><code>ls -l</code>    详细的列举出当前文件夹的内容</p>
+<p><code>cd</code>    进入文件夹的命令</p>
+<p>我能记住的就是这四个，也是敲的次数比较多的</p>
+<p>还有就是</p>
+<p><code>mkdir</code>    创建文件夹</p>
+<p><code>tar</code>    解压</p>
+<p><code>rm -r</code>    删除文件夹以及该文件夹下的内容</p>
+<p>其次，linux里面涉及一个超级管理员的东西，没有获得超级权限的时候，涉及系统文件夹/系统文件的东西都不能动。</p>
+<p>例如，我想把jdk装到系统文件夹/usr/lib下，必须得获得超级权限才可以。</p>
+<p>如何获得超级权限呢？在终端输入<code>su</code></p>
+<p><img src="https://images.shiguangping.com/images/%E9%BC%93%E6%8D%A3%E4%BA%86%E4%B8%80%E5%A4%A9linux%EF%BC%8C%E5%BF%83%E7%B4%AF/%E5%9B%BE1.png" alt="请输入图片描述"></p>
+<p>输入管理员密码，输入的时候密码是不可见的，输入完成直接回车。<img src="https://images.shiguangping.com/images/%E9%BC%93%E6%8D%A3%E4%BA%86%E4%B8%80%E5%A4%A9linux%EF%BC%8C%E5%BF%83%E7%B4%AF/%E5%9B%BE2.png" alt="请输入图片描述"></p>
+<p>然后之前的绿色字体也变成了白色字体，字段也发生了变化。</p>
+<p>或者就是在命令前面加上 <code>sudo</code>,</p>
+<p><img src="https://images.shiguangping.com/images/%E9%BC%93%E6%8D%A3%E4%BA%86%E4%B8%80%E5%A4%A9linux%EF%BC%8C%E5%BF%83%E7%B4%AF/%E5%9B%BE3.png" alt="请输入图片描述"></p>
+<p>说明这条命令是管理员命令。</p>
+<p>今天接触的不多，很多东西记得不是很清晰，linux打算再用一段时间看看，看看什么时候能给我逼到放弃。</p>
+<p>对了，刚刚装好ubuntu之后用自带的火狐浏览器看B站会提示需要下载adobe flash player，这个也是初装ubuntu之后需要做的。</p>
+</div><script src="/js/jquery.min.js"></script><script src="/js/main.js"></script></body></html>
