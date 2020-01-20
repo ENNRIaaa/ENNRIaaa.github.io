@@ -3,8 +3,6 @@ date: 2019-03-30 00:00
 toc: true
 
 ---
-![请输入图片描述][1]
-
 <video src='https://images.shiguangping.com/videos/VLog%C2%B7%E9%A3%8E%E9%9B%AA%E4%BA%A4%E5%8A%A0%20%E3%80%81%E5%91%86%E5%9C%A8%E5%AE%B6%E9%87%8C%E7%9C%8B%E9%9B%AA/VLog%C2%B7%E9%A3%8E%E9%9B%AA%E4%BA%A4%E5%8A%A0%20%E3%80%81%E5%91%86%E5%9C%A8%E5%AE%B6%E9%87%8C%E7%9C%8B%E9%9B%AA.mp4' type='video/mp4' controls='controls'  width='100%' height='100%'>
 </video>
 
