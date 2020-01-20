@@ -47,7 +47,7 @@ git checkout -b hexo
 </code></pre>
 7.提交复制过来的文件到暂存区，命令如下：
 <pre><code>
-git add - -all
+git add --all
 </code></pre>
 注意：`-`之间无空格！  
 
@@ -58,7 +58,7 @@ git commit -m "新建分支资源文件"
 引号内的内容自定义，就是一个备注。  
 9.推送分支到GitHub上，命令如下：
 <pre><code>
-git push - -set-upstream origin hexo
+git push --set-upstream origin hexo
 </code></pre>
 注意：`-`之间无空格！  
 推送成功之后，到GitHub仓库刷新一下，看看`hexo`分支下是否已经成功上传了本地的源文件。  
