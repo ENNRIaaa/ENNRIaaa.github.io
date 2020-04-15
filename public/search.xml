@@ -3,6 +3,87 @@
   
     
     <entry>
+      <title>Linux下的Vim使用教程</title>
+      <link href="/2020/04/Linux%E4%B8%8B%E7%9A%84Vim%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+      <url>/2020/04/Linux%E4%B8%8B%E7%9A%84Vim%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h3 id="什么是Vim？"><a href="#什么是Vim？" class="headerlink" title="什么是Vim？"></a>什么是Vim？</h3><p>Vim是从Vi发展出来的一个功能非常强大的文本编辑器，在程序员中广泛使用。</p><h3 id="Vim-Vi的使用"><a href="#Vim-Vi的使用" class="headerlink" title="Vim/Vi的使用"></a>Vim/Vi的使用</h3><p>基本上Vim/Vi共分为三种模式：分别是<strong>命令模式（Command mode）</strong>，<strong>输入模式（Insert mode）</strong>和<strong>底线命令模式（Last line mode）</strong>。这三种模式的作用分别是：</p><h4 id="命令模式："><a href="#命令模式：" class="headerlink" title="命令模式："></a>命令模式：</h4><p>用户进入Vim时即是<strong>命令模式</strong>。</p><h4 id="输入模式："><a href="#输入模式：" class="headerlink" title="输入模式："></a>输入模式：</h4><p>在命令模式下按 <strong>“ i ”</strong>进入输入模式。</p><p>输入模式下按<strong>“ ESC ”</strong>，退出到命令模式。</p><h4 id="底线命令模式："><a href="#底线命令模式：" class="headerlink" title="底线命令模式："></a>底线命令模式：</h4><p>在命令模式下按<strong>“ ：“</strong>（英文状态下的冒号），进入底线命令模式。</p><p>在底线命令模式下可以输入单个或多个字符的命令，可用的命令非常多。</p><p>在底线命令模式中，基本的命令有（已经省略了冒号）：</p><ul><li>q 退出程序</li><li>w 保存文件</li></ul><p>按<strong>” ESC “ </strong> 键退出底线命令模式。</p><p>Vim工作模式：</p><p><code>vim filename</code>进入<code>命令模式</code></p><p><code>i</code>进入<code>输入模式</code></p><p><code>esc</code>退出到<code>命令模式</code></p><p><code>:</code>命令模式下按冒号进入到<code>底线命令模式</code></p><p><code>:wq</code>保存并退出Vim</p><h4 id="常见命令："><a href="#常见命令：" class="headerlink" title="常见命令："></a>常见命令：</h4>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>关于【时光瓶】博客托管至GitHub的说明</title>
+      <link href="/2020/03/%E5%85%B3%E4%BA%8E%E3%80%90%E6%97%B6%E5%85%89%E7%93%B6%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%BF%81%E8%87%B3%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E8%AF%B4%E6%98%8E/"/>
+      <url>/2020/03/%E5%85%B3%E4%BA%8E%E3%80%90%E6%97%B6%E5%85%89%E7%93%B6%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%BF%81%E8%87%B3%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E8%AF%B4%E6%98%8E/</url>
+      <content type="html"><![CDATA[<p>考虑到博客的维护和运营成本，已将全部内容托管至GitHub，这样更便于内容的维护。</p><p>— 李炎·时光瓶<br>2020.3.12</p><hr><p>今天百度云客服给我打电话，告知了百度云BCC服务器1折的活动，我花费42元购买了半年的服务，所以把之前挪到本地的文件又转移到了百度云上，域名也进行了续费，这半年又可以开心地写博客了。</p><p>— 李炎·时光瓶<br>2018.9.14</p><hr><p>今天，完成了时光瓶博客从腾讯云主机搬迁至本地服务器。<br>由于腾讯云主机本月到期，考虑到博客运营成本问题，不再续费，所以博客搬迁到本地服务器上，本地服务器开启时间不稳定。</p><p>预计博客恢复时间为今年12月份，我将采购一台性价比高的本地服务器，博客届时恢复。</p><p>— 李炎·时光瓶<br>2018.9.4</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>L2TP/IPSec一键安装脚本</title>
+      <link href="/2020/03/L2TP:IPSec%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/"/>
+      <url>/2020/03/L2TP:IPSec%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/</url>
+      <content type="html"><![CDATA[<h4 id="本脚本适用环境："><a href="#本脚本适用环境：" class="headerlink" title="本脚本适用环境："></a>本脚本适用环境：</h4><p>系统支持：CentOS6+，Debian7+，Ubuntu12+<br>内存要求：≥128M<br>更新日期：2017 年 05 月 28 日</p><h4 id="关于本脚本："><a href="#关于本脚本：" class="headerlink" title="关于本脚本："></a>关于本脚本：</h4><p>名词解释如下<br>L2TP（Layer 2 Tunneling Protocol）<br>IPSec（Internet Protocol Security）<br>IKEv2 (Internet Key Exchange v2)<br>能实现 IPsec 的目前总体上有 openswan，libreswan，strongswan 这3种。<br>libreswan 是基于 openswan 的 fork，所以现在各个发行版基本已经看不到 openswan 的身影了。<br>当然也有使用 strongswan 的。</p><p>之所以要更新 L2TP 一键安装脚本，是因为随着各个 Linux 发行版不断推陈出新，原有的脚本已经不适应现在的需求。<br>本脚本通过编译安装最新版 libreswan 来实现 IPSec（CentOS7 下则是全部 yum 安装），yum 或 apt-get 来安装 xl2tpd，再根据各个发行版的使用方法不同，部署防火墙规则。</p><h4 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h4><p>基于 OpenVZ 虚拟化技术的 VPS 需要开启TUN/TAP才能正常使用，购买 VPS 时请先咨询服务商是否支持开启 TUN/TAP。</p><p>OpenVZ 虚拟的 VPS 需要系统内核支持 IPSec 才行。也就是说，母服务器的内核如果不支持的话那就没办法，只能换 VPS。<br>因此，一般不建议在 OpenVZ 的 VPS 上安装本脚本。脚本如果检测到该 VPS 为 OpenVZ 架构，会出现警告提醒。</p><h6 id="如何检测是否支持TUN模块？"><a href="#如何检测是否支持TUN模块？" class="headerlink" title="如何检测是否支持TUN模块？"></a>如何检测是否支持TUN模块？</h6><p>执行命令：<br><code>cat /dev/net/tun</code><br>如果返回信息为：<br>cat: /dev/net/tun: File descriptor in bad state<br>说明正常</p><h6 id="如何检测是否支持ppp模块？"><a href="#如何检测是否支持ppp模块？" class="headerlink" title="如何检测是否支持ppp模块？"></a>如何检测是否支持ppp模块？</h6><p>执行命令：<br><code>cat /dev/ppp</code><br>如果返回信息为：cat: /dev/ppp: No such device or address 说明正常</p><p>当然，脚本在安装时也会执行检查，如果不适用于安装，脚本会予以提示。</p><h4 id="使用方法："><a href="#使用方法：" class="headerlink" title="使用方法："></a>使用方法：</h4><p>root 用户登录后，运行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://raw.githubusercontent.com/teddysun/across/master/l2tp.sh</span><br><span class="line">chmod +x l2tp.sh</span><br><span class="line">./l2tp.sh</span><br></pre></td></tr></table></figure></p><p>执行后，会有如下交互界面<br><img src="https://teddysun.com/wp-content/uploads/2016/l2tp_1.png" width="400"></p><p>Please input IP-Range:<br>(Default Range: 192.168.18):<br>输入本地IP段范围（本地电脑连接到VPS后给分配的一个本地IP地址），直接回车意味着输入默认值192.168.18</p><p>Please input PSK:<br>(Default PSK: teddysun.com):<br>PSK意为预共享密钥，即指定一个密钥将来在连接时需要用到，直接回车意味着输入默认值teddysun.com</p><p>Please input Username:<br>(Default Username: teddysun):<br>Username意为用户名，即第一个默认用户。直接回车意味着输入默认值teddysun</p><p>Please input teddysun’s password:<br>(Default Password: Q4SKhu2EXQ):<br>输入用户的密码，默认会随机生成一个10位包含大小写字母和数字的密码，当然你也可以指定密码。</p><p>ServerIP:your_server_main_IP<br>显示你的 VPS 的主 IP（如果是多 IP 的 VPS 也只显示一个）</p><p>Server Local IP:192.168.18.1<br>显示你的 VPS 的本地 IP（默认即可）</p><p>Client Remote IP Range:192.168.18.2-192.168.18.254<br>显示 IP 段范围</p><p>PSK:teddysun.com<br>显示 PSK</p><p>Press any key to start…or Press Ctrl+c to cancel<br>按下任意按键继续，如果想取消安装，请按Ctrl+c键</p><p>安装完成后，脚本会执行 ipsec verify 命令并提示如下：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">If there are no [FAILED] above, then you can connect to your</span><br><span class="line">L2TP VPN Server with the default Username/Password is below:</span><br><span class="line"></span><br><span class="line">ServerIP:your_server_IP</span><br><span class="line">PSK:your PSK</span><br><span class="line">Username:your usename</span><br><span class="line">Password:your password</span><br><span class="line"></span><br><span class="line">If you want to modify user settings, please use command(s):</span><br><span class="line">l2tp -a (Add a user)</span><br><span class="line">l2tp -d (Delete a user)</span><br><span class="line">l2tp -l (List all users)</span><br><span class="line">l2tp -m (Modify a user password)</span><br><span class="line">Welcome to visit https://teddysun.com/448.html</span><br><span class="line">Enjoy it!</span><br></pre></td></tr></table></figure><p>如果你要想对用户进行操作，可以使用如下命令：<br>l2tp -a 新增用户<br>l2tp -d 删除用户<br>l2tp -m 修改现有的用户的密码<br>l2tp -l 列出所有用户名和密码<br>l2tp -h 列出帮助信息  </p><h6 id="其他事项："><a href="#其他事项：" class="headerlink" title="其他事项："></a>其他事项：</h6><p>1、脚本在安装完成后，已自动启动进程，并加入了开机自启动。<br>2、脚本会改写 iptables 或 firewalld 的规则。<br>3、脚本安装时，会即时将安装日志写到 /root/l2tp.log 文件里，如果你安装失败，可以通过此文件来寻找错误信息。  </p><h6 id="使用命令："><a href="#使用命令：" class="headerlink" title="使用命令："></a>使用命令：</h6><p>ipsec status （查看 IPSec 运行状态）<br>ipsec verify （查看 IPSec 检查结果）<br>/etc/init.d/ipsec start|stop|restart|status （CentOS6 下使用）<br>/etc/init.d/xl2tpd start|stop|restart （CentOS6 下使用）<br>systemctl start|stop|restart|status ipsec （CentOS7 下使用）<br>systemctl start|stop|restart xl2tpd （CentOS7 下使用）<br>service ipsec start|stop|restart|status （Debian/Ubuntu 下使用）<br>service xl2tpd start|stop|restart （Debian/Ubuntu 下使用）  </p><h6 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h6><p>2017 年 05 月 28 日：<br>升级 libreswan 到版本 3.20。<br>修正 libreswan 的若干配置问题。<br>修正 xl2tpd 的端口监听配置问题。<br>修正在 CentOS 6 对 libevent2 的依赖问题，改为 yum 安装 libevent2-devel。<br>测试表明，在内网环境的 VPS 里（如AWS， IDCF，GCE，腾讯云，阿里云等）也可以正常使用了。  </p><p>2017 年 02 月 25 日：<br>升级 libreswan 到版本 3.19。  </p><p>2016 年 09 月 12 日：<br>修正了在 CentOS 6 下 libevent2 依赖的问题；<br>新增了一个 -m 选项，用以修改现有用户的密码。  </p><p>2016 年 08 月 13 日：<br>修正 Debian 8 下的 sd-daemon.h: No such file or directory 问题，是由于缺少依赖包 libsystemd-daemon-dev 导致的。</p><p>2016 年 08 月 05 日：<br>升级 libreswan 到版本 3.18。  </p><p>2016 年 06 月 10 日：<br>脚本在安装完成后，新增了几个命令，便于操作用户<br>l2tp -a 新增用户<br>l2tp -d 删除用户<br>l2tp -l 列出所有用户<br>l2tp -h 列出帮助信息  </p><p>2016 年 04 月 25 日：<br>4、在 Vultr 的 Debian 7的系统模板下安装时，软件包 libcurl4-nss-dev 会出现依赖错误。如下所示：  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The following packages have unmet dependencies:</span><br><span class="line">libcurl4-nss-dev : Depends: libldap2-dev but it is not going to be installed</span><br><span class="line">Depends: librtmp-dev but it is not going to be installed</span><br></pre></td></tr></table></figure><p>而 libldap2-dev 和 librtmp-dev 又依赖了其他几种软件包。总之最后的依赖关系如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">libldap2-dev : Depends: libldap-2.4-2 (= 2.4.31-2+deb7u1) but 2.4.31+really2.4.40+dfsg-1+deb8u1~bpo70+1 is to be installed</span><br><span class="line">librtmp-dev : Depends: libgnutls-dev but it is not going to be installed</span><br><span class="line">libgnutls-dev : Depends: libp11-kit-dev (&gt;= 0.4) but it is not going to be installed</span><br><span class="line">libp11-kit-dev : Depends: libp11-kit0 (= 0.12-3) but 0.20.7-1~bpo70+1 is to be installed</span><br></pre></td></tr></table></figure><p>那么解决办法就是把最底层的依赖包 libp11-kit0 先卸载掉，然后再安装 libcurl4-nss-dev 即可。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get -y remove libp11-kit0</span><br><span class="line">apt-get -y --no-install-recommends install libcurl4-nss-dev wget</span><br></pre></td></tr></table></figure><p>然后再运行脚本安装即可。</p><p>2016 年 04 月 22 日：<br>修复了在 Ubuntu 16.04 下因为默认缺少 python 命令而导致 ipsec verify 等命令不能用的问题。</p><p>2016 年 04 月 19 日：<br>修复了在 Debian 7 下因为 libnss3 和 libnspr4 的版本过低而导致编译 libreswan 失败的问题。</p><p>2016 年 04 月 18 日：<br>目前在 Debian 7 上测试的结果，因为 libnss3 和 libnspr4 的版本过低而导致编译 libreswan 失败。临时解决办法是 dpkg 安装 libnss3_3.17.2 和 libnspr4_4.10.7 的 deb 包后重试。</p><hr><p>本内容来源于：<a href="https://teddysun.com/448.html" target="_blank" rel="noopener">https://teddysun.com/448.html</a></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>碰到恶心人了</title>
+      <link href="/2020/03/%E7%A2%B0%E5%88%B0%E6%81%B6%E5%BF%83%E4%BA%BA/"/>
+      <url>/2020/03/%E7%A2%B0%E5%88%B0%E6%81%B6%E5%BF%83%E4%BA%BA/</url>
+      <content type="html"><![CDATA[<p>因为疫情的缘故，在家呆一个多月了，本来天天闷在家就挺闹心的，还有<strong>垃圾人</strong>来恶心我。</p><p>这种垃圾人喜欢人身攻击，擅长抓你的痛处，还喜欢侮辱你和你的家人，让我心里挺不舒服。</p><p>这种垃圾人没有教养，他也不知道啥是<strong><em>教养</em></strong>，遇到事儿不知道从自身找原因，总感觉都是被人欠他的，只会在嘴上逞能，过过嘴瘾。</p><p>这种垃圾人满脑子龌龊想法，认为别人都跟他一样是垃圾。</p><p>不知道是啥环境“孕育”了这种垃圾的存在，让他出来恶心别人，还满脑子的坏道儿。</p><p>这种人就会逼逼，长嘴就会骂人，我也算是领教了。做人留点儿口德，要不别以后让人揍了都不知道咋回事儿。</p><p>垃圾人到啥时候都是垃圾人。</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>再过不久就要离开My house，拍照留念</title>
+      <link href="/2020/01/%E5%86%8D%E8%BF%87%E4%B8%8D%E4%B9%85%E5%B0%B1%E8%A6%81%E7%A6%BB%E5%BC%80My%20house%EF%BC%8C%E6%8B%8D%E7%85%A7%E7%95%99%E5%BF%B5/"/>
+      <url>/2020/01/%E5%86%8D%E8%BF%87%E4%B8%8D%E4%B9%85%E5%B0%B1%E8%A6%81%E7%A6%BB%E5%BC%80My%20house%EF%BC%8C%E6%8B%8D%E7%85%A7%E7%95%99%E5%BF%B5/</url>
+      <content type="html"><![CDATA[<p>下午把我的一些东西都堆成一块，真要开始搬家了。</p><p>还有点儿舍不得，心里特别矛盾，有点期待回家的新生活，但是一想到这一走可能再也不会回来了，真不舍。</p><p>住了两年的家，有感情。</p><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0135.jpeg" width="600"></p><p>住了两年的床。</p><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0136.jpeg" width="600"></p><p>卧室虽小，我喜欢。</p><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0137.jpeg" width="600"></p><h3 id="主机装箱"><a href="#主机装箱" class="headerlink" title="主机装箱"></a>主机装箱</h3><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0133.jpeg" width="600"></p><p>之前喜欢玩永恒之塔，我感觉我的电脑配置就是为了玩永恒之塔，一点儿点儿堆起来的。</p><p>上学那阵儿没有钱，对电脑硬件也不是很了解，我记得当时买了块儿<em>影驰的GTX560SE虎将</em>，我现在感觉这个显卡就是智商检测卡。</p><p>工作之后装过三台电脑。</p><p>第一台是<strong><em>i7 4790K+GTX970</em></strong>，之后卖了。（这是第一次买超过2K元的CPU，这台电脑的前身是i5 4590K+750ti）</p><p>第二台是<strong><em>锐龙R7 1700X+EVGA GTX1070</em></strong>,之后卖了。（这是第一次买AMD的CPU，在锐龙刚发布的时候，就决定要买这个处理器。但是，第一代锐龙或多或少有些小毛病）</p><p>第三台是<strong><em>锐龙R7 2700X+蓝宝石Vega 56超白金OC</em></strong>，就是现在这台。（二代要比一代强不少，主频有提升，上一代温度检测过高的问题也没有了，用着没出现什么问题，这是第一次组装3A平台。曾经世人装机避之不及的AMD现在也翻身了。显卡没什么说的，功耗高，性能和1070ti相当）</p><p>我现在已经不玩游戏了，这台电脑平时是吃灰的状态，估计以后不会轻易换配置了。</p><h3 id="搬家前的娱乐设施"><a href="#搬家前的娱乐设施" class="headerlink" title="搬家前的娱乐设施"></a>搬家前的娱乐设施</h3><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0134.jpeg" width="600"></p><p>宜家的这款桌子我非常喜欢，100多块钱的价格，让我收获了2年的幸福感。</p><p>笔电本来是在北卧，因为收拾东西的缘故，拿到南卧。</p><p>这里本来是放置台式机的。</p><h3 id="北卧的桌面"><a href="#北卧的桌面" class="headerlink" title="北卧的桌面"></a>北卧的桌面</h3><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0139.jpeg" width="600"></p><p>住过之后才知道自己的习惯。</p><p>有机会再装修的话，我一定不会把我的桌子放置在这个三面封闭的角落里。</p><p>在这里学习办工，总有一种压迫感。</p><p>最好是把书桌放在窗边，累了还可以看看外面。（<em>环境是影响心情的要素之一</em>）</p><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0140.jpeg" width="600"></p><p>宜家的时钟，挺简约的。</p><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0138.jpeg" width="600"></p><p>Emm~,最近收拾行李，乱</p><p>其实，我是个爱收拾屋子的boy。</p><h3 id="路过就照一下卫生间"><a href="#路过就照一下卫生间" class="headerlink" title="路过就照一下卫生间"></a>路过就照一下卫生间</h3><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0141.jpeg" width="600"></p><p>卫生间还是喜欢这种长长的，能做成干湿分离。（我只挡了个浴帘）</p><p>我看盘锦的两居室，大多都是两个卧室中间夹了一个四方的卫生间。</p><p>面积都差不多，但是很难设计，空间容易浪费。</p><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0142.jpeg" width="600"></p><h3 id="电脑主机-amp-一堆的包装盒"><a href="#电脑主机-amp-一堆的包装盒" class="headerlink" title="电脑主机&amp;一堆的包装盒"></a>电脑主机&amp;一堆的包装盒</h3><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0145.jpeg" width="600"></p><h3 id="没收拾的餐桌和厨房"><a href="#没收拾的餐桌和厨房" class="headerlink" title="没收拾的餐桌和厨房"></a>没收拾的餐桌和厨房</h3><p><img src="https://images.shiguangping.com/imgs/202001/31/IMG_0146.jpeg" width="600"></p><p>这个房子厉害之处就是厨房比较大，我把小阳台和厨房打通了。</p><p>我看有邻居把厨房边上的阳台做成了一个小书房，我之前咋就没想到呢。（房子后面的环境还是不错的，有山有树的）</p><hr><p>顺利的话，2月底应该就搬走了。</p><p>留念我生活了两年的家，人又有多少个2年呢。</p><p><strong><em>2020年1月31日 晴天</em></strong></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>收拾行李</title>
+      <link href="/2020/01/%E6%94%B6%E6%8B%BE%E8%A1%8C%E6%9D%8E/"/>
+      <url>/2020/01/%E6%94%B6%E6%8B%BE%E8%A1%8C%E6%9D%8E/</url>
+      <content type="html"><![CDATA[<p>在家躲避疫情的同时，我需要着手收拾我的行李了，</p><p><strong><em>I think</em></strong> 搬家对任何人来说，都不是一件简单的事情。</p><p>需要收拾整理的东西太多，以至于无从下手。</p><hr><p>最近总是有一种<strong><em>失败感</em></strong>萦绕着我，</p><p>即将踏入30岁的我，一事无成，回忆这几年的经历，没有一件事儿能让我有成就感。</p><p>直到去年10月份为止，我都没有过回老家的念头，</p><p>直到某一天，回家的想法油然而生。</p><p>小姐姐说，我是找到了一种退路。</p><p>我没有一技之长，做事情没有恒心，之前也尝试过去找其他的工作，改变现状，改变自己的经济情况，但是都以失败告终。</p><p>我对自己不擅长的事情从来没有想过去突破它，而是选择逃避。</p><p>即便现在已经卖了房子，决定要回家，但对未来的生活仍然充满恐惧。</p><hr><p>我知道，人如果一直被失败情绪掩埋的话，自己都会去否定自己。</p><p>无论我做了什么决定，都会怀疑这么做可能是不对的，</p><p>害怕别人会指责自己，这种想法真是太糟糕了。</p><p>为什么社会会存在这么多压力呢？</p><p>来自家里人亲人的压力，他们总会去拿他们认为的事情来要求我要怎么做，如果我不这么做，他们就会说我这么做是不对的。</p><p>来自社会共识的压力，这个社会“规定”30岁之前就要结婚，长辈们甚至认为过了30岁都属于晚婚了，可是我现在连对象都没有。</p><p>有的时候我还会想，如果以后找的女朋友和自己的生活习惯不同步怎么办。我喜欢让家里简单一点儿，而不是各种东西乱丢，可未来的女朋友偏偏和我相反怎么办？</p><p>各种各种的烦心事儿一样接着一样。</p><p>还有对回家后要做什么工作，能做什么工作还一无所知，一切都得从0开始，虽然现在也不过是0.1。</p><hr><p>现在这个社会，对男人的要求太过苛刻。</p><p>或者说对绝大多数的男人太苛刻。</p><p>昨天在人人视频下载了一部英剧，(⊙o⊙)…，<strong><em>【SEX EDUCATION】</em></strong>，这个片儿呢人人评级是E，里面涉及一些成人情节，但幸好，我已经是成年人。</p><p>我看介绍，以为这个片儿单纯的就是那种很邪恶的片儿，但其实不是这样的。</p><p>看了三集，我才觉得这才是我想要的生活，不是说SEX，而是FREE。<strong><em>FREEDOM</em></strong>。</p><p>自从我有了回家的想法之后，除了感受到来自未来生活的现实压力之外，最主要的是，我想明白一件事情。</p><p>我的人生不过几十年，辛苦地活着也是活着，轻松地活着也是活着。</p><p>在大城市还一辈子房贷，每天想着如何挣钱是活着；回老家有地方住能吃口饭，多点儿时间做喜欢的事儿还是活着。</p><p>我不要再让外界的意识来约束自己，让我喘不过气。</p><p>今后，我要让自己活得开心就好了，屏蔽掉周围人的一些杂音，不能让其他人的想法来束缚我自己。</p><p>这不是自私，也不是颓废，这是我现在才明白的一种生活的方式和理念。</p><p>人不是机器，人总会有热血澎湃和身心交瘁的阶段，有动力的时候就多做，累了的时候就歇一歇。</p><hr><p>不追求大富大贵，能满足生活就好。</p><p><strong><em>2020年1月30日 晴天</em></strong></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>入手日版Nintendo Switch</title>
+      <link href="/2020/01/%E5%85%A5%E6%89%8B%E6%97%A5%E7%89%88Nintendo%20Switch/"/>
+      <url>/2020/01/%E5%85%A5%E6%89%8B%E6%97%A5%E7%89%88Nintendo%20Switch/</url>
+      <content type="html"><![CDATA[<p><img src="https://images.shiguangping.com/imgs/202001/IMG_5103.JPG" width="600"></p><p>这是我入手的第三台任天堂switch。</p><p>第一台是任天堂刚发布switch不久之后购入的，当时系统还没有简体中文，大多数游戏都没有中文，后来闲鱼出手了。</p><p>第二台是去年吧，被异度之刃2这款游戏的CG吸引了，玩了没多久也卖了。</p><p>前几天一直在为入手NS还是NSL所困扰，后来合计一步到位，以后能在电视上玩，还是买了这台Switch，好像是日版的续航增强版，现在版本真多。</p><p>机器是昨天到的，贴膜是今天上午到的。</p><p>刚刚贴膜的时候膜贴废了，随后又在京东买了张贴膜，还有内存卡，打算明天再重新贴一下。</p><p>最近这几天，在家躲避疫情，重新开始玩玩之前的神作，<strong><em>塞尔达旷野之息</em></strong>。</p><p>之前玩的是日文版的，真心费劲。</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>科普？针对虚岁的问题说一说</title>
+      <link href="/2020/01/%E7%A7%91%E6%99%AE%EF%BC%9F%E9%92%88%E5%AF%B9%E8%99%9A%E5%B2%81%E7%9A%84%E9%97%AE%E9%A2%98%E8%AF%B4%E4%B8%80%E8%AF%B4/"/>
+      <url>/2020/01/%E7%A7%91%E6%99%AE%EF%BC%9F%E9%92%88%E5%AF%B9%E8%99%9A%E5%B2%81%E7%9A%84%E9%97%AE%E9%A2%98%E8%AF%B4%E4%B8%80%E8%AF%B4/</url>
+      <content type="html"><![CDATA[<p>一次在知乎回答问题的时候，提及了自己的年龄。</p><p><code>我周岁26岁，虚岁28岁</code>，就是我认为很平常的一句话，却被一些人形容说我不会算术。</p><p>Emm~</p><p>当看到别人评论的时候我一时还没有反应过来，过后才意识到，原来他们说的是我的年龄。</p><p>所以，针对中国存在的“虚岁”的问题，说一说。</p><hr><p>绝大多数人的观念里，虚岁都是比周岁大一岁，</p><p>但是，我周岁26岁，虚岁28岁。</p><p>这里我说一下虚两岁是怎么算的：</p><p>我是农历1993年腊月十二日[1]生人，按虚岁算，小孩儿一出生就是1岁，由于我是阴历腊月生的，刚出生没几天就过年了，过年即是2岁。</p><p>所有我出生还没满一个月，虚岁就已经是2岁了。而实际上，我一周岁都没到。</p><p>等又过一年，我虚岁已经3岁了，这时我才满一周岁。</p><p>这就是由于农历生日小，导致虚岁比较大的原因。</p><hr><p>别人一问我，你今年多大啦？</p><p>我说，26。</p><p>很多长辈就会问，属啥的？</p><p>我说，属鸡。</p><p>人家一算，属鸡今年不是28吗？</p><p>我就尴尬了，我后面还得补一句，<strong>我生日小</strong>。</p><p>Emm~</p><p>其实，按阳历算，我是94年1月生人，今年周岁本就应该是26岁，中国非得弄个阴历生日。</p><p>并且，无论是政府办事儿、找工作投简历、退休年龄等等什么事情，都按着身份证的阳历生日来算。</p><p>真是整出来很多不必要的麻烦。</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>春节过后回到大连了</title>
+      <link href="/2020/01/%E6%98%A5%E8%8A%82%E8%BF%87%E5%90%8E%E5%9B%9E%E5%88%B0%E5%A4%A7%E8%BF%9E%E4%BA%86/"/>
+      <url>/2020/01/%E6%98%A5%E8%8A%82%E8%BF%87%E5%90%8E%E5%9B%9E%E5%88%B0%E5%A4%A7%E8%BF%9E%E4%BA%86/</url>
+      <content type="html"><![CDATA[<p>最近，冠状病毒肺炎疫情越来越严重了，</p><p>年前还只是从新闻上了解情况，现在突然听说盘锦东风有从武汉回来的人确诊了，才意识到，疫情就发生在我们身边。</p><p>本来计划初六回大连，由于疫情发展得太快，决定初五回来。</p><p>今早新闻通知全辽宁省内的客车站都已停运，</p><p>我当即决定今天回大连。</p><hr><p>现在车站安检，都有工作人员量体温，保证疫情不进一步蔓延。</p><p>相对于03年的SARS，现在人们对疫情的认识和控制能力都提高不少。</p><p>但是，仍有很多人，尤其是老年人，没有意识到疫情的严重性。</p><hr><p>希望疫情及早控制中，大家一切平安。</p><p>能不出门尽量不要出门，保证自己的安全的同时也保障了其他人的安全。</p><p><strong><em>2020年1月27日 大年初三 阴天</em></strong></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>GitHub 查看分支</title>
       <link href="/2020/01/github%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF/"/>
       <url>/2020/01/github%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF/</url>
@@ -88,24 +169,6 @@
       <link href="/2019/12/%E9%80%80%E7%83%A7%E9%94%AE%E7%9B%98-Niz%20micro82%2045g/"/>
       <url>/2019/12/%E9%80%80%E7%83%A7%E9%94%AE%E7%9B%98-Niz%20micro82%2045g/</url>
       <content type="html"><![CDATA[<p>腊月十二生日，  </p><p>今天提前收到了小姐姐送给我的生日礼物，一把心仪已久的键盘，<strong><em>Niz宁芝静电容键盘（micro82 45g)</em></strong>。  </p><p>这把键盘真的是喜欢很久了，但是碍于价格和我微薄的生活费，也只能想想了。  </p><p>废话不多说了，上图：  </p><p><em>（此时在用这把键盘敲字，太爽了，这手感和声音，爽毙了）</em>  </p><p><strong><em>小姐姐说这个键盘按起来像以前上微机课的键盘-。-！</em></strong></p><p><img src="https://images.shiguangping.com/imgs/201912/20191214_144301.jpg" alt="外包装">  </p><p>外包装比较简单，普通的纸盒。  </p><p><img src="https://images.shiguangping.com/imgs/201912/20191214_144329.jpg" alt="键盘本体"></p><p>键盘本体，这款是82键版本，和我现在用的Poker 61键的比多了一排按键。黑灰的键帽配色，很有程序员的意思。</p><p><img src="https://images.shiguangping.com/imgs/201912/20191214_150504.jpg" alt="和我的黑苹果一起使用"></p><p>键盘自带了Mac键帽可以替换，还带了几个增压弹簧。  </p><p>键盘采用PBT键帽，用久了也不会出现打油的情况。键盘我还是推荐用白色，或者类似白色，干净不易脏，看久了不腻。黑色尤其是ABS键帽，特别不耐脏。</p><p><img src="https://images.shiguangping.com/imgs/201912/20191214_150516.jpg" alt="Logo"></p><p><strong>空格有Niz的logo，网上说这是A大以自己女儿的名字命名的。</strong></p><p>键盘整体做工略显粗糙，但也对得起它的价格。和动辄2000多的HHKB比起来，这款键盘的价格相当亲民了。</p><p><img src="https://images.shiguangping.com/imgs/201912/20191214_151002.jpg" alt="最后"></p><p>这把键盘打字真的非常爽，太爽了，没有真正用过，真是很难体会这种打字的快感。</p><hr><p><strong><em>感谢小姐姐，2019年12月14日。</em></strong></p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>2020年计划之回家</title>
-      <link href="/2019/11/2020%E5%B9%B4%E8%AE%A1%E5%88%92%E4%B9%8B%E5%9B%9E%E5%AE%B6/"/>
-      <url>/2019/11/2020%E5%B9%B4%E8%AE%A1%E5%88%92%E4%B9%8B%E5%9B%9E%E5%AE%B6/</url>
-      <content type="html"><![CDATA[<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>2019年11月，我忽生一个想法，我打算回老家了。这是我之前从未有过的想法，我本以为我会在大连一直生活下去，然而我并没有坚持下去。  </p><p>在大连生活了5年，人这一辈子又有几个5年，我不应该让自己活得这么累，在大连还一辈子房贷又为了什么呢？  </p><p>我打算回老家，回到盘锦，回到我家人的身边。  </p><p>为此，我做了如下2020年计划。（一切都以卖掉房子为基础）  </p><h1 id="step-1"><a href="#step-1" class="headerlink" title="step.1"></a>step.1</h1><p>目前，我家这个位置的二手房每平米售价在1.3W上下。  </p><p>最近在链家看同小区成交价在1.27W每平。  </p><p>我现在挂到中介的价格是每平1.33W，总房款约111W。  </p><p>我心里的成交底线是108W，在大连房价没有大涨大跌的情况下，是不能低于这个售价的，否则我还得继续在大连坚持。  </p><p>这里卖二手房涉及一些我需要支出的费用，我粗略地算了一下：  </p><ul><li>个税（房产证满五年免）+营业税（房产证满两年免） 房屋估价（按100W计算） * 6.3% 约等于 6.3W元</li><li>中介费（以链家计算） 总房款 * 1% 约等于 1.1W元</li><li>垫资公司垫资还贷款赎楼（剩余50W贷款） 2%/月， 垫资3个月就是 3W元</li></ul><p>以上合计支出，约10万元。  </p><p>如果房子卖110W，我最后能到手50W，这一切都是在万事顺利的情况下的。  </p><p>如果拿不到这些钱，我还是不能卖房子，只能在大连默默地坚持。  </p><hr><h6 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h6><p>一开始冒出回家这个念头时，我真是心情澎湃，计算着拿这笔钱回家买房子，买车，想象着以后的大好生活。但是这几天这种澎湃的心情有了些许降温。因为在这面前还有很多我不确定的，无法掌控的情况可能会出现。  </p><p>我无法预料明年大连的房价走势，或许会大跌，买房子这两年涨的这些钱可能还会跌回去，卖了房子剩下的钱回家也买不了房子。  </p><p>可能在出售房子的时候某一个环节出现差错，因为网上有太多交易的时候被黑中介骗，黑买家骗的例子，最后闹得我房财两空，悔恨终生。  </p><p>还有一种可能就是房子不跌，但也卖不出去，这种可能性比较大，因为现在打房市给我的感觉就是如此，有价无市。  </p><p>我发现人有时候就是容易杞人忧天，把事情往坏的地方想。  </p><p>我17年年初买房子的时候，从来没想着回老家，那时候想的是我能拿十多万首付在大连买房子，是我来大连这几年做的最正确的决定，因为到年底房价就窜窜地涨，房贷利率也开始涨，那十几万在大连买二手房都费劲。  </p><p>现在房价涨了，我打算卖房子回家，我感觉自己就像一个投资者一样，卖了房子，还赚了点儿钱，觉得大连这几年也没白来，当初房子也没白买。  </p><p>无论未来如何，都要欣然接受，说白了就是命，因为谁也无法预料以后会如何。</p><p>但愿，过完年再回来，房子能顺利地卖出去。  </p><p><em>2019年11月29日 记</em></p><h1 id="setp-2"><a href="#setp-2" class="headerlink" title="setp.2"></a>setp.2</h1><p>不确定房子能不能顺利地卖出去，等有动静的时候，再继续写下一步计划，否则一切都是一场空啊。</p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>2020年计划之新房装修</title>
-      <link href="/2019/11/2020%E5%B9%B4%E8%AE%A1%E5%88%92%E4%B9%8B%E6%96%B0%E6%88%BF%E8%A3%85%E4%BF%AE/"/>
-      <url>/2019/11/2020%E5%B9%B4%E8%AE%A1%E5%88%92%E4%B9%8B%E6%96%B0%E6%88%BF%E8%A3%85%E4%BF%AE/</url>
-      <content type="html"><![CDATA[<h1 id="不知道能不能有机会新房装修"><a href="#不知道能不能有机会新房装修" class="headerlink" title="不知道能不能有机会新房装修"></a>不知道能不能有机会新房装修</h1><p>因为现在大连的房子还没有爱出去，一切只是空想，先计划着。  </p><p>新房装修，给自己总结了几点：  </p><ul><li><p>硬装时要简约（硬装不要有太多啰嗦的东西，主要是地板和大白，看着干净就好）  </p><ol><li><p>房间布局，玄关，阳台，客厅，餐厅，厨房，卫生间，想好每个地方的位置，格局，想象成已经装修好后的样子去设计它。（之后拿到户型图后再具体研究）  </p></li><li><p>改水电，水主要是在厨房和卫生间，还有阳台，现在很多都把洗衣机放到阳台，这个要根据户型，设计好。电主要是考虑到开关插座的位置，个数等。由于可能会用到想Aqura这样的智能产品，这些都要考虑好，考虑到自己从进屋到后的每一个角落的功能，充分发挥智能生活的思路。  </p></li><li><p>瓦工，我依旧是喜欢在客厅和卧室铺地板，地板感觉温馨，有家的舒适和品质，地砖太冷，太亮，只能放在厨房和洗手间，洗手间最好设计成干湿分离，一是有格局，二是在使用上也比较舒适。  </p></li><li><p>木工，这个主要是依据户型，设计柜子的位置。柜子的样式是一方面，板材的材质，颜色，质地等也是影响感官的条件。  </p></li><li><p>门和阳台包边，理石板的选择，地板的选择。地板在选择时尽量选择深色，但不要浅色和灰色，门还是以白色为主。</p></li></ol><p>硬装要简洁，干净，啰嗦的东西不要有。只要把功能性上考虑到位即可。其余一个家里的风格色调都要靠软装。</p></li></ul>]]></content>
       
       
     </entry>
@@ -219,15 +282,6 @@
     </entry>
     
     <entry>
-      <title>五月二日·和小姐姐去KTV</title>
-      <link href="/2019/05/%E4%BA%94%E6%9C%88%E4%BA%8C%E6%97%A5%C2%B7%E5%92%8C%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BBKTV/"/>
-      <url>/2019/05/%E4%BA%94%E6%9C%88%E4%BA%8C%E6%97%A5%C2%B7%E5%92%8C%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BBKTV/</url>
-      <content type="html"><![CDATA[<p>今天天气异常的好</p><p>室外很暖和</p><p>为了不浪费五一的假期</p><p>和小姐姐去KTV嗨皮一下</p><p><img src="https://images.shiguangping.com/images/%E4%BA%94%E6%9C%88%E4%BA%8C%E6%97%A5%C2%B7%E5%92%8C%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BBKTV/mmexport1556870333950.jpg" alt="非让我给她照相"></p><p><img src="https://images.shiguangping.com/images/%E4%BA%94%E6%9C%88%E4%BA%8C%E6%97%A5%C2%B7%E5%92%8C%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BBKTV/mmexport1556870331242.jpg" alt="到一个地方照一个地方"></p><p><img src="https://images.shiguangping.com/images/%E4%BA%94%E6%9C%88%E4%BA%8C%E6%97%A5%C2%B7%E5%92%8C%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BBKTV/mmexport1556870327963.jpg" alt="请输入图片描述"></p><p><img src="https://images.shiguangping.com/images/%E4%BA%94%E6%9C%88%E4%BA%8C%E6%97%A5%C2%B7%E5%92%8C%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BBKTV/mmexport1556870325698.jpg" alt="请输入图片描述"></p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
       <title>Study With Me·Day 01</title>
       <link href="/2019/04/Study%20With%20Me%C2%B7Day%2001/"/>
       <url>/2019/04/Study%20With%20Me%C2%B7Day%2001/</url>
@@ -241,15 +295,6 @@
       <link href="/2019/04/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/"/>
       <url>/2019/04/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/</url>
       <content type="html"><![CDATA[<p>废话不多说，上图</p><p><img src="https://images.shiguangping.com/images/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/%E5%9B%BE6.jpg" alt="京东 商品页"></p><p><img src="https://images.shiguangping.com/images/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/%E5%9B%BE1.jpg" alt="图上至下：倍思30W快充头、iSky Lighting 2 type-c数据线、倍思type-c数据线"></p><p><img src="https://images.shiguangping.com/images/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/%E5%9B%BE2.jpg" alt="充电头外包装"></p><p><img src="https://images.shiguangping.com/images/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/%E5%9B%BE3.jpg" alt="充电头实物（USB&amp;Type-c双输出）"></p><p><img src="https://images.shiguangping.com/images/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/%E5%9B%BE4.jpg" alt="充电头参数"></p><p>这款快充头支持当前市面上的所有快充协议：</p><blockquote><p>支持华为SuperCharge超级快充</p></blockquote><blockquote><p>支持华为SCP（低压快充）、FCP（高压快充）</p></blockquote><blockquote><p>QC3.0快充协议（兼容AFC、PE+快充）</p></blockquote><blockquote><p>PD3.0快充协议</p></blockquote><p>用了几天，实测魅族16Plus充电更快，iPad2018速度稍快但不明显</p><p><img src="https://images.shiguangping.com/images/%E6%96%B0%E8%B4%AD%E5%85%A5%E7%9A%84%E5%B0%8F%E7%8E%A9%E6%84%8F%E5%84%BF%C2%B7%E5%80%8D%E6%80%9D30W%E5%BF%AB%E5%85%85%E5%A4%B4/%E5%9B%BE5.jpg" alt="L 2 C数据线（MFi认证）"></p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>清明小长假·陪小姐姐去医院o ho</title>
-      <link href="/2019/04/%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%C2%B7%E9%99%AA%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BB%E5%8C%BB%E9%99%A2o%20ho/"/>
-      <url>/2019/04/%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%C2%B7%E9%99%AA%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BB%E5%8C%BB%E9%99%A2o%20ho/</url>
-      <content type="html"><![CDATA[<p>今天陪小姐姐到医院做一些常规检查</p><p>中午到海边溜达了一圈</p><p>非得让我给她照相</p><p>还老说我照相技术不好</p><p><img src="https://images.shiguangping.com/images/%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%C2%B7%E9%99%AA%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BB%E5%8C%BB%E9%99%A2o%20ho/%E5%9B%BE%E4%B8%80.jpg" alt="樱花树下（Ps.应该是樱花吧?）"></p><p>椅子上坐着一对儿老夫妻</p><p>今天天气不错，吹着海风，晒太阳</p><p>开春的大连，很美</p><p><img src="https://images.shiguangping.com/images/%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%C2%B7%E9%99%AA%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BB%E5%8C%BB%E9%99%A2o%20ho/%E5%9B%BE%E4%BA%8C.jpg" alt="这张照片我比较喜欢（滤镜用得好）"></p><p><img src="https://images.shiguangping.com/images/%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%C2%B7%E9%99%AA%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BB%E5%8C%BB%E9%99%A2o%20ho/%E5%9B%BE%E4%B8%89.jpg" alt="后面是美丽的星海"></p><p><img src="https://images.shiguangping.com/images/%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%C2%B7%E9%99%AA%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BB%E5%8C%BB%E9%99%A2o%20ho/%E5%9B%BE%E5%9B%9B.jpg" alt="小姐姐摆POSE（爱搞怪)"></p><p><img src="https://images.shiguangping.com/images/%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%C2%B7%E9%99%AA%E5%B0%8F%E5%A7%90%E5%A7%90%E5%8E%BB%E5%8C%BB%E9%99%A2o%20ho/%E5%9B%BE%E4%BA%94.jpg" alt="手机快门很慢，拍一次真不容易"></p><p>照了一大堆，挑选了几张发出来</p><p>留个纪念</p><p>愿小姐姐以后会更好</p>]]></content>
       
       
     </entry>
@@ -345,15 +390,6 @@
     </entry>
     
     <entry>
-      <title>旅顺 一座有历史的城市</title>
-      <link href="/2019/03/%E6%97%85%E9%A1%BA%20%E4%B8%80%E5%BA%A7%E6%9C%89%E5%8E%86%E5%8F%B2%E7%9A%84%E5%9F%8E%E5%B8%82/"/>
-      <url>/2019/03/%E6%97%85%E9%A1%BA%20%E4%B8%80%E5%BA%A7%E6%9C%89%E5%8E%86%E5%8F%B2%E7%9A%84%E5%9F%8E%E5%B8%82/</url>
-      <content type="html"><![CDATA[<p><img src="https://images.shiguangping.com/wp-file/2019/03/enn_ri_53023983_160503048276618_7128231731253760928_n.jpg" alt="旅顺路边一景（1)"></p><p><img src="https://images.shiguangping.com/wp-file/2019/03/enn_ri_52361025_1945621225563641_7596101173943536979_n.jpg" alt="旅顺路边一景（2)"></p><p>旅顺在大连来说，是一座相当有历史意义的城市</p><p>我现在工作干活的主要地点都在旅顺，在大连生活的这几年，来旅顺的次数真是太多太多</p><p>由于整个东北经济的低沉萎靡，使得大连也在走下坡路，离 ‘旅游城市’ 真是越来越远了</p><p>但是如果来大连，还是推荐来旅顺逛逛。她不像南方古城那样，有诗意，也没有发达城市的繁华，但是，目前留下来的遗址能让我们再次看到过去的历史</p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
       <title>时光瓶终于部署完了 終わっだ～(=´ω｀)ﾉおやすみだょぅ</title>
       <link href="/2019/03/%E6%97%B6%E5%85%89%E7%93%B6%E7%BB%88%E4%BA%8E%E9%83%A8%E7%BD%B2%E5%AE%8C%E4%BA%86/"/>
       <url>/2019/03/%E6%97%B6%E5%85%89%E7%93%B6%E7%BB%88%E4%BA%8E%E9%83%A8%E7%BD%B2%E5%AE%8C%E4%BA%86/</url>
@@ -363,10 +399,10 @@
     </entry>
     
     <entry>
-      <title>时光瓶终于部署完了 終わっだ～(=´ω｀)ﾉおやすみだょぅ</title>
-      <link href="/2019/03/%E6%97%B6%E5%85%89%E7%93%B6%E7%BB%88%E4%BA%8E%E9%83%A8%E7%BD%B2%E5%AE%8C%E4%BA%86%20%E7%B5%82%E3%82%8F%E3%81%A3%E3%81%A0%EF%BD%9E(=%C2%B4%CF%89%EF%BD%80)%EF%BE%89%E3%81%8A%E3%82%84%E3%81%99%E3%81%BF%E3%81%A0%E3%82%87%E3%81%85/"/>
-      <url>/2019/03/%E6%97%B6%E5%85%89%E7%93%B6%E7%BB%88%E4%BA%8E%E9%83%A8%E7%BD%B2%E5%AE%8C%E4%BA%86%20%E7%B5%82%E3%82%8F%E3%81%A3%E3%81%A0%EF%BD%9E(=%C2%B4%CF%89%EF%BD%80)%EF%BE%89%E3%81%8A%E3%82%84%E3%81%99%E3%81%BF%E3%81%A0%E3%82%87%E3%81%85/</url>
-      <content type="html"><![CDATA[<p><img src="https://images.shiguangping.com/wp-file/2019/03/enn_ri_52878266_1032683290253394_7840037019232790573_n.jpg" alt="请输入图片描述"></p><p>睡觉了</p><p>凌晨 0：07</p><p><img src="https://images.shiguangping.com/wp-file/2019/03/enn_ri_52878266_1032683290253394_7840037019232790573_n.jpg" alt="凌乱的桌面"></p>]]></content>
+      <title>旅顺 一座有历史的城市</title>
+      <link href="/2019/03/%E6%97%85%E9%A1%BA%20%E4%B8%80%E5%BA%A7%E6%9C%89%E5%8E%86%E5%8F%B2%E7%9A%84%E5%9F%8E%E5%B8%82/"/>
+      <url>/2019/03/%E6%97%85%E9%A1%BA%20%E4%B8%80%E5%BA%A7%E6%9C%89%E5%8E%86%E5%8F%B2%E7%9A%84%E5%9F%8E%E5%B8%82/</url>
+      <content type="html"><![CDATA[<p><img src="https://images.shiguangping.com/wp-file/2019/03/enn_ri_53023983_160503048276618_7128231731253760928_n.jpg" alt="旅顺路边一景（1)"></p><p><img src="https://images.shiguangping.com/wp-file/2019/03/enn_ri_52361025_1945621225563641_7596101173943536979_n.jpg" alt="旅顺路边一景（2)"></p><p>旅顺在大连来说，是一座相当有历史意义的城市</p><p>我现在工作干活的主要地点都在旅顺，在大连生活的这几年，来旅顺的次数真是太多太多</p><p>由于整个东北经济的低沉萎靡，使得大连也在走下坡路，离 ‘旅游城市’ 真是越来越远了</p><p>但是如果来大连，还是推荐来旅顺逛逛。她不像南方古城那样，有诗意，也没有发达城市的繁华，但是，目前留下来的遗址能让我们再次看到过去的历史</p>]]></content>
       
       
     </entry>
@@ -385,15 +421,6 @@
       <link href="/2019/01/%E5%B9%B4%E5%89%8D%E5%A4%A7%E6%89%AB%E9%99%A4/"/>
       <url>/2019/01/%E5%B9%B4%E5%89%8D%E5%A4%A7%E6%89%AB%E9%99%A4/</url>
       <content type="html"><![CDATA[<p><img src="https://images.shiguangping.com/wp-file/2019/03/P90121-140847-1024x768.jpg" alt="南卧室"></p><p><img src="https://images.shiguangping.com/wp-file/2019/03/P90121-134557-1024x768.jpg" alt="AMD锐龙2700X+蓝宝石Vega56超白金OC"></p><p><img src="https://images.shiguangping.com/wp-file/2019/03/P90121-141104-768x1024.jpg" alt="洗漱台"></p><p><img src="https://images.shiguangping.com/wp-file/2019/03/P90121-141503-1024x768.jpg" alt="宜家 餐桌+4把椅子 799元"></p><p><img src="https://images.shiguangping.com/wp-file/2019/03/P90121-141520-768x1024.jpg" alt="杭州游乌镇时购入的小玩意儿"></p><p><img src="https://images.shiguangping.com/wp-file/2019/03/P90121-141610-1024x768.jpg" alt="窗外小区内景色"></p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>关于【时光瓶】博客搬迁至百度云的说明</title>
-      <link href="/2018/09/%E5%85%B3%E4%BA%8E%E3%80%90%E6%97%B6%E5%85%89%E7%93%B6%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%BF%81%E8%87%B3%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E8%AF%B4%E6%98%8E/"/>
-      <url>/2018/09/%E5%85%B3%E4%BA%8E%E3%80%90%E6%97%B6%E5%85%89%E7%93%B6%E3%80%91%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%BF%81%E8%87%B3%E7%99%BE%E5%BA%A6%E4%BA%91%E7%9A%84%E8%AF%B4%E6%98%8E/</url>
-      <content type="html"><![CDATA[<p>今天百度云客服给我打电话，告知了百度云BCC服务器1折的活动，我花费42元购买了半年的服务，所以把之前挪到本地的文件又转移到了百度云上，域名也进行了续费，这半年又可以开心地写博客了。</p><p>— 李炎·时光瓶<br>2018.9.14</p><hr><p>今天，完成了时光瓶博客从腾讯云主机搬迁至本地服务器。<br>由于腾讯云主机本月到期，考虑到博客运营成本问题，不再续费，所以博客搬迁到本地服务器上，本地服务器开启时间不稳定。</p><p>预计博客恢复时间为今年12月份，我将采购一台性价比高的本地服务器，博客届时恢复。</p><p>— 李炎·时光瓶<br>2018.9.4</p>]]></content>
       
       
     </entry>
