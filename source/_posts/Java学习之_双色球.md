@@ -1,7 +1,13 @@
-title: Java学习之_双色球
+title: JavaSE自学之_双色球程序（随机数）
 date: 2018-04-13 21:45
 toc: true
+
+
+
 ---
+
+*源代码：*
+
 ```java
 package Thedoublechromosphere;
 

@@ -1,8 +1,13 @@
-title: Java学习之_小闹钟
+title: JavaSE自学之_小闹钟程序
 date: 2018-04-13 19:08
 toc: true
 
+
+
 ---
+
+*2020年4月20日---这是前年自学JavaSE时写的，有些功能不会实现的时候就会找百度，后来因为自身原因学习也就搁置了。当初刚开始自学的时候，真是精神头十足，实现某种功能感觉特别有成就感。*
+
 ```java
 import java.applet.Applet;
 import java.applet.AudioClip;

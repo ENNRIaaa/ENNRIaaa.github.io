@@ -1,4 +1,4 @@
-title: Linux学习之~dpkg命令简述
+title: dpkg命令简述
 date: 2018-05-20 00:00
 toc: true
 
