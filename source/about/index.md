@@ -1,11 +1,15 @@
 # 关于我
 
-李炎，94年生，在大连从事移动网络优化工作。
+李炎，94年生，在大连从事了多年移动网络优化工作。
 
-明年可能准备回老家了吧，还不知道呢。
+目前正在学习Java开发。
 
-附上我的一张照片。
+附上一张照片。
 
 <img src="https://images.shiguangping.com/imgs/201911/IMG_52d80c.jpg" width=50%>  
 
-刚刚看完《肖申克的救赎》，一部比较经典的电影，做人要学会隐忍，人生道路很长，但时不时也要做点儿什么。
+***“灵明无著，物来顺应，未来不迎，当时不杂，既过不恋，是之谓虚而已矣，是之谓诚而已矣。” --曾国藩***
+
+**"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self." -- Ernest Hemingway**
+
+**“没有什么是比超越昨天的自己更有成就感的事儿了。” --2020年6月26日**
