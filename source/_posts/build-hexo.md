@@ -1,6 +1,9 @@
 title: 小白部署HEXO到GitHub
+
 date: 2018-06-10 02:38:31
-toc: true
+tags:
+
+- Hexo 
 
 ----------
 # 前言

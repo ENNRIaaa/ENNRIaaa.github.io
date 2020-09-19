@@ -1,6 +1,14 @@
 title: 入手日版Nintendo Switch
+
 date: 2020-01-29 12:49
-toc: true
+
+categories:
+
+- 生活
+
+tags:
+
+- Nintendo Switch
 
 ---
 <img src="https://images.shiguangping.com/imgs/202001/IMG_5103.JPG" width=600>

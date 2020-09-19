@@ -1,6 +1,16 @@
-title: Java学习之_开发环境的安装
+title: JDK安装及配置环境变量
+
 date: 2018-04-13 21:51
-toc: true
+
+categories:
+
+- Java
+
+tags:
+
+- JDK安装
+
+
 
 ---
 

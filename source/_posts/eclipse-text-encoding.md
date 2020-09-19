@@ -1,8 +1,10 @@
-title: linux eclipse导入windows工程后出现中文乱码解决方法
+title: 解决Linux中eclipse导入Windows项目后出现中文乱码问题
+
 date: 2018-05-16 00:00
-toc: true
 
+tags:
 
+- eclipse
 
 ---
 我今天遇到这个问题，在百度问了一遍，大多数的方法都不行

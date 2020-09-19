@@ -1,6 +1,10 @@
 title: 在Linux中使配置alias永久生效
+
 date: 2018-06-13 15:06:45
-toc: true
+
+categories:
+
+- Linux
 
 ---
 ### 编辑.bashrc

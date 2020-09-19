@@ -1,6 +1,10 @@
 title: Hexo上传本地源文件到GitHub
-date: 2020-04-15 21:23
-toc: true
+
+date: 2018-06-13 01:34:21
+
+tags:
+
+- Hexo 
 
 ---
 # 前言(可忽略不看) #
@@ -20,7 +24,7 @@ toc: true
 ## 1.提前准备 ##
 首先，不论是在另一台电脑上还是重新安装了系统，都要安装好Node.js和Git，还有HEXO，它们的安装方式具体参考HEXO的[说明文档](https://hexo.io/zh-cn/docs/)。  
 ## 2.操作流程 ##
-1.登录到GitHub，打开HEXO所在的仓库，在博客所在的repository新建一个分支**hexo**，在仓库Setting下的Branches中，设置**hexo**为默认分支。
+1.登录到GitHub，打开hexo所在的仓库，在博客所在的repository新建一个分支**hexo**，在仓库Setting下的Branches中，设置**hexo**为默认分支。
 2.克隆repository到本地，命令如下：  
 
 ```shell
@@ -59,8 +63,6 @@ git checkout -b hexo
 git add --all
 ```
 
-*注意：all前面是两个"-"*
-
 8.提交，命令如下：
 
 ```shell
@@ -71,10 +73,9 @@ git commit -m "新建分支资源文件"
 9.推送分支到GitHub上，命令如下：
 
 ```shell
-git push --set-upstream origin hexo
+git push origin hexo
 ```
 
-*注意：set前面是两个"-"*
 推送成功之后，到GitHub仓库刷新一下，看看**hexo**分支下是否已经成功上传了本地的源文件。
 到这里，本地的源文件已经上传到GitHub上，HEXO本地源文件直接使用`git push`命令就可以了，HEXO发博客的操作跟以前一样，还是这三步：`hexo c`、`hexo g`、`hexo d -g`。  
 
@@ -94,9 +95,3 @@ git clone -b hexo git@github.com:ENNRIaaa/shiguangping-blog.git
 # 结尾 #
 今天主要提供帮助的是CSDN博主LeonWuV,如果我的文章有一些地方看不懂，或者有错误，可参考[此博主的文章](https://blog.csdn.net/wxl1555/article/details/79293159)。
 本文写了一个多小时，终于结束了。虽然很墨迹，但是很快乐。
-
-
-
-***创作时间：2018-06-13 01:34:21***
-
-***更新时间：2020-04-15 21:23***

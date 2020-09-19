@@ -1,6 +1,10 @@
 title: Mac OS下安装和配置Maven
+
 date: 2020-05-11 14:52
-toc: true
+
+categories:
+
+- Java
 
 ---
 

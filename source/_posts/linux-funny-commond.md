@@ -1,10 +1,12 @@
 title: Linux的几个有趣命令
+
 date: 2018-06-14 14:53:09
-description: 新手必会的几个命令，自娱自乐
-categories: 生活随笔
-tags: [Linux]
-toc: true
-feature:
+
+categories:
+
+- Linux
+
+
 
 ---
 #### sl命令

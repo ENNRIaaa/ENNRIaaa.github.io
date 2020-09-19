@@ -1,6 +1,11 @@
 title: IDEA中的Web项目移动到Eclipse
+
 date: 2020-06-1 22:19:00
-toc: true
+
+tags:
+
+- IntelliJ IDEA
+- eclipse
 
 ---
 

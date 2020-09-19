@@ -1,6 +1,10 @@
 title: 使用Cloudreve搭建私有云盘
+
 date: 2019-09-09 22:10
-toc: true
+
+tags:
+
+- 可道云
 
 ---
 ### 1.访问[官网][1]下载源码
@@ -33,4 +37,4 @@ toc: true
 2. 不支持文件夹上传，这个不算是问题，我看论坛，开发者目前没有加入文件夹上传这一功能。
 
 
-  [1]: https://cloudreve.org/
+[1]: https://cloudreve.org/

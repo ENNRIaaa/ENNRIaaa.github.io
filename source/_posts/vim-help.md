@@ -1,6 +1,10 @@
 title: Linux下的Vim使用教程
+
 date: 2020-4-11
-toc: true
+
+tags:
+
+- Vim
 
 ---
 ### 什么是Vim？
