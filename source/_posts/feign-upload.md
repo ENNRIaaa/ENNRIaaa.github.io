@@ -15,6 +15,8 @@ tags:
 
 使用Spring Cloud Feign上传文件，早期的Spring Cloud中，Feign本身是没有上传文件的能力的，要想实现这一点，需要自己编写`Encoder`去实现上传。现在，Feign官方提供了子项目[feign-form](https://github.com/OpenFeign/feign-form)，其中实现了上传所需的`Encoder`。
 
+<!--more-->
+
 > 注：笔者测试的版本是Edgware.RELEASE。Camden、Dalston同样适应本文所述。
 
 ## 加依赖
