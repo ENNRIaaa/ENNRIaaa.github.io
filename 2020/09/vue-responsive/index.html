@@ -8,16 +8,16 @@
 <link rel="canonical" href="https://www.shiguangping.com/2020/09/vue-responsive/">
 <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-<meta name="description" content="写代码时遇到这样一个问题，页面打开后进行axios请求数据，将响应回的数据赋值给data()中的一个对象，然后再v-for遍历显示到页面中。 但每次打开页面之后要遍历显示的数据都没有显示出来，重新刷新或者点下其它的下拉框，要遍历的元素才显示出来。 起初我以为是异步请求的问题，怀疑是先渲染DOM后请求的数据，后来查阅官方文档，Vue是无法检测对象和数组的变化的。">
+<meta name="description" content="写代码时遇到这样一个问题，页面打开后进行axios请求数据，将响应回的数据赋值给data()中的一个对象，然后再v-for遍历显示到页面中。 但每次打开页面后要遍历显示的数据都没有显示出来，重新刷新或者点下其它的下拉框，要遍历的元素才显示。 起初我以为是异步请求的问题，怀疑是先渲染DOM后请求的数据，后来查阅官方文档，原因是Vue无法检测对象和数组的变化。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Vue数据变化检测（无法检测对象&#x2F;数组元素的变化问题）">
 <meta property="og:url" content="https://www.shiguangping.com/2020/09/vue-responsive/index.html">
 <meta property="og:site_name" content="时光瓶〜李炎の生活日誌〜">
-<meta property="og:description" content="写代码时遇到这样一个问题，页面打开后进行axios请求数据，将响应回的数据赋值给data()中的一个对象，然后再v-for遍历显示到页面中。 但每次打开页面之后要遍历显示的数据都没有显示出来，重新刷新或者点下其它的下拉框，要遍历的元素才显示出来。 起初我以为是异步请求的问题，怀疑是先渲染DOM后请求的数据，后来查阅官方文档，Vue是无法检测对象和数组的变化的。">
+<meta property="og:description" content="写代码时遇到这样一个问题，页面打开后进行axios请求数据，将响应回的数据赋值给data()中的一个对象，然后再v-for遍历显示到页面中。 但每次打开页面后要遍历显示的数据都没有显示出来，重新刷新或者点下其它的下拉框，要遍历的元素才显示。 起初我以为是异步请求的问题，怀疑是先渲染DOM后请求的数据，后来查阅官方文档，原因是Vue无法检测对象和数组的变化。">
 <meta property="og:locale">
 <meta property="og:image" content="https://images.shiguangping.com/imgs/20200905230153.jpg">
 <meta property="article:published_time" content="2020-09-24T10:21:00.000Z">
-<meta property="article:modified_time" content="2020-09-24T02:41:38.255Z">
+<meta property="article:modified_time" content="2020-09-24T02:50:15.864Z">
 <meta property="article:author" content="Yan Li">
 <meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
@@ -26,7 +26,7 @@
 <link href="//cdn.jsdelivr.net/gh/fiteen/fiteen.github.io@v0.1.0/font.css" rel="stylesheet"><link href="/icomoon/style.css" rel="stylesheet"><link href="/custom/vintage-popup.min.css" rel="stylesheet"><link href="/custom/popup-material-theme.min.css" rel="stylesheet"><link href="/styles.e9a789bb12d50882ba5d.css" rel="stylesheet">
 <link rel="stylesheet" href="/theme.2bedea1bdf6bd220f42a.css" is="theme">
 
-<script src="/config.85b0e9935e746f8caabe.js"></script>
+<script src="/config.f36b130b9d93a55bc574.js"></script>
 
 <meta name="generator" content="Hexo 5.1.1"></head>
 <body lang="zh-Hans">
