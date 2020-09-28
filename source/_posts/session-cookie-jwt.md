@@ -164,7 +164,7 @@ Redis一听更着急上火了，“我工作这么久以来，从没有撂过挑
 
  
 
-<img src="https://images.shiguangping.com/imgs/20200926115110.image" alt="img" style="zoom:50%;" />![img](https://images.shiguangping.com/imgs/20200926115118.image)
+<img src="https://images.shiguangping.com/imgs/20200926115110.image" alt="img" style="zoom:50%;" />
 
  
 
@@ -174,7 +174,7 @@ Redis一听更着急上火了，“我工作这么久以来，从没有撂过挑
 
  
 
-<img src="https://images.shiguangping.com/imgs/20200926115110.image" alt="img" style="zoom:50%;" />![img](https://images.shiguangping.com/imgs/20200926115118.image)
+<img src="https://images.shiguangping.com/imgs/20200926115118.image" alt="img" style="zoom:50%;" />
 
  
 
