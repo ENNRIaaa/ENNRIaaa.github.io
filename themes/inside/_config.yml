@@ -95,11 +95,13 @@ profile:
 
 # Sidebar navigation links
 menu:
-  Home: /
+  主页: /
+  归档: /archives
+  标签: /tags
+  关于: /about
+  搜索: /search
+  赞赏: /pay
   JavaNote: https://javabook.shiguangping.com
-  About: /about
-  Search: /search
-  Pay: /pay
   # Links: /links
   # Github: https://github.com/username
 
@@ -515,6 +517,18 @@ plugins:
         qrcode.makeCode(this.location.href);
       </script>
       <script>$('#popupTrigger').popup();</script>
+
+  # 隐藏sidebar中个人信息下面的盒子
+  - position: sidebar
+    template: |
+      <script>
+        console.log('>>>欢迎访问我的博客"时光瓶"<<<')
+        var x = document.getElementsByClassName("φeq φf");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+      </script>
 
 
       
