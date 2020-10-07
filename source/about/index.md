@@ -6,7 +6,7 @@
 
 附上一张照片。
 
-<img src="https://images.shiguangping.com/imgs/201911/IMG_52d80c.jpg" width=50%>  
+<img src="https://images.shiguangping.com/imgs/201911/IMG_52d80c.jpg" width="300px">  
 
 ***“灵明无著，物来顺应，未来不迎，当时不杂，既过不恋，是之谓虚而已矣，是之谓诚而已矣。” --曾国藩***
 
