@@ -32,10 +32,12 @@ tags:
 - 新建nacos容器
 
   ```bash
-  docker run --env MODE=standalone --name nacos -d -p 8848:8848 nacos/nacos-server
+  docker run --env MODE=standalone --name nacos -d -p 8001:8848 nacos/nacos-server
   ```
 
-  `env`参数是指容器所处的环境，这里是指建立单机版的nacos
+  `--env`:参数是指容器所处的环境，这里是指建立单机版的nacos。
+  
+  `-p 8001:8848`:8001是主机端口，8848是docker容器端口。
 
 
 
@@ -58,8 +60,8 @@ tags:
   `nacos`为容器名称，进入交互模式，进入conf目录，可以使用vim编辑nacos配置文件`application.properties`。
 
   ```properties
-  # 修改端口号（默认是8848）
-  server.port=8001
+  # 默认端口号8848（此端口号对应容器端口号）
+  server.port=8848
   # 数据库的url/user/pass
   db.url.0=jdbc:mysql://localhost:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
   db.user=root
