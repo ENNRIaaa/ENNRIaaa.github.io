@@ -118,17 +118,16 @@ sns:
   facebook:
   instagram:
   tumblr:
-  dribbble:
-  telegram:
+  dribbble: 
+  telegram: 
   youtube:
   hangouts: 
   linkedin: 
   pinterest: 
-  soundcloud:
+  soundcloud: 
   myspace: 
-  weibo:
+  weibo: 
   qq: http://wpa.qq.com/msgrd?v=3&uin=721748889&site=qq&menu=yes
-  git: https://gitee.com/ENNRIAAA
 
 # Sidebar footer copyright info
 footer:
@@ -484,9 +483,6 @@ plugins:
         style="padding:2px;width:10rem;height:10rem;border:1px solid #bbb;vertical-align:bottom;margin-top:2.4rem"
         draggable="false"
         width="160" height="160">
-
-  # font-awesome
-  - icomoon/style.css
 
   # post页面底部二维码
   - custom/qrcode.min.js
