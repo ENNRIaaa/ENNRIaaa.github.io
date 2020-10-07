@@ -12,9 +12,11 @@ tags:
 
 ---
 
-Github Pages已经凉凉了，
+Github Pages已经凉凉了[Facepalm]
 
 [Netlify](https://app.netlify.com/)是一个提供静态网站托管的服务平台，可以持续部署，能够将托管在 GitHub，GitLab 等网站上的 Jekyll，Hexo，Hugo 等代码自动编译并生成静态网站。
+
+<!--more-->
 
 ---
 
@@ -22,7 +24,7 @@ Github Pages已经凉凉了，
 
 ![image-20201007165401301](https://images.shiguangping.com/imgs/20201007165401.png)
 
-选择使用GitHub账号登录
+选择使用GitHub账号登录，点击`New site from Git`：
 
 ![image-20201007165823158](https://images.shiguangping.com/imgs/20201007165823.png)
 
