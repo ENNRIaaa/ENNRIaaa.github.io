@@ -48,7 +48,25 @@ Github Pages已经凉凉了😓
 
 ![image-20201007171434450](https://images.shiguangping.com/imgs/20201007171434.png)
 
-点击核实后添加域名，之后可以配置HTTPS。
+点击核实后添加域名：
+
+![image-20201008092109409](https://images.shiguangping.com/imgs/20201008092109.png)
+
+设置站点名称：
+
+![image-20201008092206210](https://images.shiguangping.com/imgs/20201008092206.png)
+
+自己的域名CNAME解析到这个site name。
+
+![image-20201008092729100](https://images.shiguangping.com/imgs/20201008092729.png)
+
+添加SSL证书，做HTTPS：
+
+![image-20201008092926932](https://images.shiguangping.com/imgs/20201008092926.png)
+
+开启强制HTTPS：
+
+![image-20201008093007836](https://images.shiguangping.com/imgs/20201008093007.png)
 
 ---
 
