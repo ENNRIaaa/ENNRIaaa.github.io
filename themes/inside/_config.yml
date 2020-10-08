@@ -526,6 +526,30 @@ plugins:
         }
       </script>
 
+  # 主页左下角的sns
+  - //cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css
+  - position: sidebar
+    template: |
+      <script>
+        var y = document.getElementsByClassName("φej");
+        var j;
+        for (j = 0; j < y.length; j++) {
+            var sup = y[j];
+            var son = document.createElement("i"); // 创建子div
+            son.className = "fa fa-git-square";
+            son.style.fontSize = "19px";
+            son.style.marginLeft = "7px";
+
+            var son1 = document.createElement("a");
+            son1.target = "_blank";
+            son1.rel = "external nofollow noopener";
+            son1.href = "https://gitee.com/ENNRIAAA";
+
+            sup.appendChild(son1); // 把a标签放到父div中
+            son1.appendChild(son); // 把i标签放到a元素中
+        }
+      </script>
+
 
       
 
